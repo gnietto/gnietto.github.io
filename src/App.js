@@ -173,6 +173,11 @@ const App = () => {
       "descripcion": 'Evolución del PIB de EEUU por trimestre en el período 1945-2015, usando D3js y SVG',
     },
     {
+    	"app": 'Previsualizador Markdown',
+    	"url": 'https://gnietto.github.io/previsualizador-markdown',
+      "descripcion": 'Previsualización de texto desde Markdown a HTML',
+    },
+    {
     	"app": 'Acortador de URL',
     	"url": 'https://reductor-url.herokuapp.com',
       "descripcion": 'Aplicación web sobre Nodejs que recibe una URL y retorna una URL corta',
@@ -198,6 +203,11 @@ const App = () => {
       "descripcion": 'Portafolio de aplicaciones web anterior',
     },
     {
+    	"app": 'Formulario del Futuro (wip)',
+    	"url": 'https://gnietto.github.io/encuestadelfuturo',
+      "descripcion": 'Encuesta que ejercita las posibilidades básicas del uso de formularios en HTML5',
+    },
+    {
     	"app": 'Infografía Chile (wip)',
     	"url": 'https://gnietto.github.io/infochile',
       "descripcion": 'Infografía de datos poblacionales de Chile hecha en SVG'
@@ -218,19 +228,9 @@ const App = () => {
       "descripcion": 'Resumen de la documentación técnica de la librería ...',
     },
     {
-    	"app": 'Formulario de Encuesta (p)',
-    	"url": '#',
-      "descripcion": 'Encuesta que ejercita las posibilidades básicas del uso de formularios en HTML5',
-    },
-    {
     	"app": 'Landing Page (p)',
     	"url": '#',
       "descripcion": 'Página de aterrizaje experimental cuyo objetivo es concretar ventas',
-    },
-    {
-    	"app": 'Previsualizador Markdown (p)',
-    	"url": '#',
-      "descripcion": 'Traducción de texto desde Markdown a HTML',
     },
     {
     	"app": 'Reloj Pomodoro (p)',
@@ -284,8 +284,8 @@ const App = () => {
       {
         listaApps.map((app, index) => {
           return (	            
-          	<Card>
-          		<Link href={app.url} key={index}> {app.app} </Link>
+          	<Card key={index}>
+          		<Link href={app.url}> {app.app} </Link>
           		<Desc> {app.descripcion} </Desc>
           	</Card>	                      
           )
