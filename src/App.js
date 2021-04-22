@@ -1,21 +1,17 @@
 import React from 'react';
-//import './App.css';
 
 function ContenedorGrid({ children }){
 	let css = {
 		display: 'grid',
 		gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
 		gridAutoFlow: 'dense',
-		gridGap: '.2rem .2rem',
+		gridGap: '.15rem .15rem',
 		margin: '0 0',
 	};
 
 	let card = {
 		backgroundColor: 'rgba(8, 226, 110, 0.81)',
 		padding: '1rem',
-	};
-
-	let celda = {
 		textAlign: 'center', 
 	};
 
@@ -35,7 +31,7 @@ function ContenedorGrid({ children }){
 		{
 			"app": 'ECommerce + Webpay',
 			"url": '#',
-			"descripcion": 'Tienda en línea con integración API Webpay (Transbank)',      
+			"descripcion": 'Tienda en línea básica con integración Webpay (Transbank) en Reactjs & Nodejs',
 		},
 				{
 			"app": 'Clon de Instagram',
@@ -53,10 +49,20 @@ function ContenedorGrid({ children }){
 			"descripcion": 'Copia de blog personal levantado con Nodejs/Stylus/Pug',
 		},
 		{
+			"app": 'Reductor URL',
+			"url": 'https://reductorurl.herokuapp.com',
+			"descripcion": 'Aplicación web que retorna una URL corta levantada en Nodejs y Mongo Atlas',
+		},
+		{
 			"app": 'FrutaKids',
 			"url": 'https://gnietto.github.io/frutakids',
 			"descripcion": 'Juego para niños que enseña la habilidad de clasificar frutas según su precio de venta',      
 		}, 
+		{
+			"app": 'Histograma PIB EEUU',
+			"url": 'https://gnietto.github.io/pibeeuu',
+			"descripcion": 'Visualización de datos de la evolución del PIB de EEUU en el período 1945-2015 levantado con la librería D3js',
+		},
 		{
 			"app": 'Emisor de Frases Célebres',
 			"url": 'https://gnietto.github.io/frasescelebres',
@@ -65,12 +71,7 @@ function ContenedorGrid({ children }){
 		{
 			"app": 'Tributo a Francisco Varela',
 			"url": 'https://gnietto.github.io/tributovarela',
-			"descripcion": 'Tributo póstumo que resalta el notable producción científica del destacado biólogo chileno',
-		},
-		{
-			"app": 'Gráfico de Barras SVG',
-			"url": 'https://gnietto.github.io/pibeeuu',
-			"descripcion": 'Evolución del PIB de EEUU 1945-2015 levantado con la librería D3js',
+			"descripcion": 'Tributo póstumo que resalta la notable producción científica del destacado biólogo chileno',
 		},
 		{
 			"app": 'Calculadora Simple',
@@ -83,76 +84,115 @@ function ContenedorGrid({ children }){
 			"descripcion": 'Previsualización de texto desde Markdown a HTML',
 		},
 		{
-			"app": 'Reductor URL',
-			"url": 'https://reductorurl.herokuapp.com',
-			"descripcion": 'Aplicación web que retorna una URL corta levantada en Nodejs y Mongo Atlas',
-		},
-		{
-			"app": 'Documentación Técnica OpenSSH (wip)',
+			"app": 'Documentación Técnica OpenSSH',
 			"url": 'https://gnietto.github.io/resumen-ssh',
 			"descripcion": 'Resumen de la documentación técnica de la librería OpenSSH',
 		},
 		{
-			"app": 'Lemon Brass Landing Page (wip)',
+			"app": 'LemonBrass Landing Page',
 			"url": 'https://gnietto.github.io/tuba-landing',
 			"descripcion": 'Página de aterrizaje experimental',
 		},
 		{
-			"app": 'Formulario del Futuro (wip)',
+			"app": 'Encuesta del Futuro',
 			"url": 'https://gnietto.github.io/encuestadelfuturo',
 			"descripcion": 'Encuesta que ejercita las posibilidades básicas del uso de formularios en HTML5',
 		},
+		{
+			"app": 'TicTacToe',
+			"url": '#',
+			"descripcion": 'Juego del gato, conocido como TicTacToe en países angloparlantes',
+		},
 	];
 
-	{          
-		listaApps.map((app, index) => {
-			return (              
-				<div key={index} className='celda card'>
-					<a href={app.url}  className='titulo' target='_blank' rel='noopener noreferrer'> {app.app} </a>
-					<p className ='descripcion'> {app.descripcion} </p>
-				</div>
-			)
-		})
-	}
+	return (
+		<div style={css}>
+			{          
+				listaApps.map((app, index) => {
+					return (              
+						<div key={index} style={card}>
+							<a href={app.url}  style={titulo} target='_blank' rel='noopener noreferrer'> {app.app} </a>
+							<p style ={descripcion}> {app.descripcion} </p>
+						</div>
+					)
+				})
+			}
+		</div>
+	)
 }
 
 function Frases(){
-	let frases = ['Hola', 'soy', 'gnietto', 'cibernetista aficionado'];
+	let frases = [
+		{
+			id: 1,
+			str: 'Hola',
+			str2: ''
+		},
+		{
+			id: 2,
+			str: 'soy',
+			str2: ''
+		},
+		{
+			id: 3,
+			str: 'gnietto',
+			str2: ''
+		},
+		{
+			id: 4,
+			str: 'programador, cibernetista aficionado & humanista',
+			str2: ''
+		}
+	];
+
 	let css = {
 		fontFamily: 'Ovo',
-		fontSize: '5rem',
-		color: '#333',
+		fontSize: '2.5rem',
+		color: '#ffa',
+		padding: 0,
+		margin: 0,
 	};
 
-	{frases.map((item, index) => {
-		return (
-			<h3 className={ css } key={index}> { item[index] } </h3>
-		);
-	})}
+	return (
+		<>
+			{frases.map((item) => {
+				return (
+					<h3 style={ css } key={item.id}> {item.str} </h3>
+				);
+			})}
+		</>
+	)
 }
 
-function Secciones( {children, estilo} ){
-	let secc1 = {
-		color: '#222',
-		width: '100%',
-		height: '100%',
-	};
+function ContenedorFrases({ children }){
+	let centrar = {
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'center',
+		alignItems: 'flex-start',
+		padding: '4rem 0 4rem 4rem',
+	}
+	return (
+		<div style={centrar}> {children} </div>
+	)
+}
 
-	let secc2 = {
-		color: '#333',
-		width: '100%',
-		height: '100%',
+function Secciones( {children} ){
+	let seccion = {
+		backgroundColor: '#222',
 	};
 	return (
-		<section className={ estilo }> {children} </section>
+		<section style={ seccion }> {children} </section>
 	);
 }
 
 function App(){
 	return (
 		<>
-			<Secciones>      	
+			<Secciones>
+				<ContenedorFrases>
 					<Frases />
+				</ContenedorFrases>
 			</Secciones>
 		
 			<Secciones>
