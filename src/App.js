@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from '@reach/router';
 
 function ContenedorGrid({ children }){
 	let css = {
@@ -71,7 +72,7 @@ function ContenedorGrid({ children }){
 		{
 			"app": 'Tributo a Francisco Varela',
 			"url": 'https://gnietto.github.io/tributovarela',
-			"descripcion": 'Tributo póstumo que resalta la notable producción científica del destacado biólogo chileno',
+			"descripcion": 'Tributo póstumo que resalta la producción científica del notable biólogo chileno',
 		},
 		{
 			"app": 'Calculadora Simple',
@@ -106,7 +107,7 @@ function ContenedorGrid({ children }){
 	];
 
 	return (
-		<div style={css}>
+		<div style={css}>			
 			{          
 				listaApps.map((app, index) => {
 					return (              
@@ -122,28 +123,12 @@ function ContenedorGrid({ children }){
 }
 
 function Frases(){
-	let frases = [
-		{
-			id: 1,
-			str: 'Hola',
-			str2: ''
-		},
-		{
-			id: 2,
-			str: 'soy',
-			str2: ''
-		},
-		{
-			id: 3,
-			str: 'gnietto',
-			str2: ''
-		},
-		{
-			id: 4,
-			str: 'programador, cibernetista aficionado & humanista',
-			str2: ''
-		}
-	];
+	let [itemFrases1, setItemFrases1] = useState('Hola')
+	let [itemFrases2, setItemFrases2] = useState('Yo soy')
+	let [itemFrases3, setItemFrases3] = useState('gnietto')
+	let [itemFrases4, setItemFrases4] = useState('Programador, ')
+	let [itemFrases5, setItemFrases5] = useState('...cibernetista aficionado,')
+	let [itemFrases6, setItemFrases6] = useState('...& humanista')
 
 	let css = {
 		fontFamily: 'Ovo',
@@ -155,11 +140,12 @@ function Frases(){
 
 	return (
 		<>
-			{frases.map((item) => {
-				return (
-					<h3 style={ css } key={item.id}> {item.str} </h3>
-				);
-			})}
+			<Link to='/acerca'> <h3 style={css} onMouseEnter={() => setItemFrases1('Acerca de')} onMouseLeave={() => setItemFrases1('Hola')} > {itemFrases1} </h3> </Link>
+			<Link to='/'> <h3 style={css} onMouseEnter={() => setItemFrases2('Portafolio')} onMouseLeave={() => setItemFrases2('Yo soy')} > {itemFrases2} </h3> </Link>
+			<Link to='/contacto'> <h3 style={css} onMouseEnter={() => setItemFrases3('Contacto')} onMouseLeave={() => setItemFrases3('gnietto')} > {itemFrases3} </h3> </Link>
+			<Link to='/blog'> <h3 style={css} onMouseEnter={() => setItemFrases4('Blog')} onMouseLeave={() => setItemFrases4('Programador,')} > {itemFrases4} </h3> </Link>
+			<Link to='/blog'> <h3 style={css} onMouseEnter={() => setItemFrases5('Blog')} onMouseLeave={() => setItemFrases5('...cibernetista aficionado')} > {itemFrases5} </h3> </Link>
+			<Link to='/blog'> <h3 style={css} onMouseEnter={() => setItemFrases6('Blog')} onMouseLeave={() => setItemFrases6('...& humanista')} > {itemFrases6} </h3> </Link>
 		</>
 	)
 }
@@ -186,6 +172,20 @@ function Secciones( {children} ){
 	);
 }
 
+function Acerca(){
+	return (<p>acerca de</p>)
+}
+
+function Blog(){
+	return (<p>blog</p>)
+
+}
+
+function Contacto(){
+ return (<p>contacto</p>)
+}
+
+
 function App(){
 	return (
 		<>
@@ -202,4 +202,4 @@ function App(){
 	);
 }
 
-export default App;
+export {App, Acerca, Contacto, Blog}
