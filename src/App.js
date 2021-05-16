@@ -19,8 +19,6 @@ function NoExiste(){
 }
 
 function ContenedorGrid({ children }){
-
-
 	let css = {
 		display: 'grid',
 		gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
@@ -51,29 +49,24 @@ function ContenedorGrid({ children }){
 
 	let listaApps = [    
 		{
-			"app": 'ECommerce + Webpay',
+			"app": 'Integración Webpay',
 			"url": '#',
-			"descripcion": 'Tienda en línea básica con integración Webpay (Transbank) levantado con Reactjs & Nodejs (pendiente) ',
+			"descripcion": 'Integración con Webpay usando Nodejs SDK (pendiente)',
 		},
 				{
-			"app": 'Clon de Instagram',
+			"app": 'App con portal privado',
 			"url": '#',
-			"descripcion": 'Clon de Instagram con backend Firebase (pendiente)',      
+			"descripcion": 'App con portal privado para usuarios registrados levantado con Reactjs + Firebase (pendiente)',
 		},
 				{
-			"app": 'Clon de LinkedIn',
+			"app": 'Clon LinkedIn',
 			"url": '#',
-			"descripcion": 'Clon de LinkedIn levantado con stack MERN (pendiente)',      
+			"descripcion": 'Clon de LinkedIn levantado con Reactjs + Firebase (pendiente)',      
 		},
 		{
 			"app": 'The Cybernetist',
 			"url": 'https://thecybernetist.herokuapp.com',
 			"descripcion": 'Copia de blog personal levantado con Nodejs/Stylus/Pug',
-		},
-		{
-			"app": 'Reductor URL',
-			"url": 'https://reductorurl.herokuapp.com',
-			"descripcion": 'Aplicación web que retorna una URL corta levantada en Nodejs y Mongo Atlas',
 		},
 		{
 			"app": 'FrutaKids',
@@ -83,7 +76,7 @@ function ContenedorGrid({ children }){
 		{
 			"app": 'Histograma PIB EEUU',
 			"url": 'https://gnietto.github.io/pibeeuu',
-			"descripcion": 'Visualización de datos de la evolución del PIB de EEUU en el período 1945-2015 levantado con la librería D3js',
+			"descripcion": 'Visualización de datos del PIB de EEUU en el período 1945-2015 levantado con D3js',
 		},
 		{
 			"app": 'Emisor de Frases Célebres',
@@ -102,33 +95,28 @@ function ContenedorGrid({ children }){
 		},
 		{
 			"app": 'Previsualizador Markdown',
-			"url": 'https://gnietto.github.io/previsualizador-markdown',
+			"url": 'https://gnietto.github.io/markdown',
 			"descripcion": 'Previsualización de texto desde Markdown a HTML',
 		},
 		{
-			"app": 'Documentación OpenSSH',
-			"url": 'https://gnietto.github.io/resumen-ssh',
-			"descripcion": 'Resumen de la documentación técnica de la librería OpenSSH',
+			"app": 'Documentación Técnica Redux',
+			"url": 'https://gnietto.github.io/resumenredux',
+			"descripcion": 'Resumen de la documentación técnica de la librería Redux',
 		},
 		{
-			"app": 'LemonBrass Landing Page',
-			"url": 'https://gnietto.github.io/tuba-landing',
+			"app": 'Tuba Landing Page',
+			"url": 'https://gnietto.github.io/tubalanding',
 			"descripcion": 'Página de aterrizaje experimental',
 		},
 		{
-			"app": 'Encuesta del Futuro',
-			"url": 'https://gnietto.github.io/encuestadelfuturo',
-			"descripcion": 'Encuesta que ejercita las posibilidades básicas del uso de formularios en HTML5',
-		},
-		{
-			"app": 'TicTacToe',
-			"url": '#',
-			"descripcion": 'Juego del gato, conocido como TicTacToe en países angloparlantes (pendiente)',
-		},
+			"app": 'Horóscopo',
+			"url": 'https://gnietto.github.io/horoscopo',
+			"descripcion": 'Horóscopo basado en formularios HTML',
+		}
 	];
 
 	return (
-		<div style={css}>			
+		<div style={css} id='apps'>			
 			{          
 				listaApps.map((app, index) => {
 					return (              
@@ -144,13 +132,11 @@ function ContenedorGrid({ children }){
 }
 
 function Frases(){
-	let [itemFrases1, setItemFrases1] = useState('Hola')
-	let [itemFrases2, setItemFrases2] = useState('Yo soy')
-	let [itemFrases3, setItemFrases3] = useState('Germán')
-	let [itemFrases4, setItemFrases4] = useState('Programador, ')
-	let [itemFrases5, setItemFrases5] = useState('...cibernetista,')
-	let [itemFrases6, setItemFrases6] = useState('...& humanista')
-
+	let [itemFrases1, setItemFrases1] = useState('Hola,')
+	let [itemFrases2, setItemFrases2] = useState('Soy')
+	let [itemFrases3, setItemFrases3] = useState('Germán:')
+	let [itemFrases4, setItemFrases4] = useState('Programador & Desarrollador;')
+	let [itemFrases5, setItemFrases5] = useState('Cibernetista & Humanista,')
 
 	let css = {
 		fontFamily: 'geomanist-regular',
@@ -164,11 +150,10 @@ function Frases(){
 	return (
 		<>
 			<Link to='/acerca'> <h3 style={css} onMouseEnter={() => setItemFrases1('Acerca de')} onMouseLeave={() => setItemFrases1('Hola')} > {itemFrases1} </h3> </Link>
-			<Link to='/'> <h3 style={css} onMouseEnter={() => setItemFrases2('Portafolio')} onMouseLeave={() => setItemFrases2('Yo soy')} > {itemFrases2} </h3> </Link>
+			<Link to='/blog'> <h3 style={css} onMouseEnter={() => setItemFrases2('Blog')} onMouseLeave={() => setItemFrases2('Yo soy')} > {itemFrases2} </h3> </Link>
 			<Link to='/contacto'> <h3 style={css} onMouseEnter={() => setItemFrases3('Contacto')} onMouseLeave={() => setItemFrases3('Germán')} > {itemFrases3} </h3> </Link>
-			<Link to='/blog'> <h3 style={css} onMouseEnter={() => setItemFrases4('Blog')} onMouseLeave={() => setItemFrases4('Programador,')} > {itemFrases4} </h3> </Link>
-			<Link to='/blog'> <h3 style={css} onMouseEnter={() => setItemFrases5('Blog')} onMouseLeave={() => setItemFrases5('...cibernetista')} > {itemFrases5} </h3> </Link>
-			<Link to='/blog'> <h3 style={css} onMouseEnter={() => setItemFrases6('Blog')} onMouseLeave={() => setItemFrases6('...& humanista')} > {itemFrases6} </h3> </Link>
+			<Link to='#apps'> <h3 style={css} onMouseEnter={() => setItemFrases4('Portafolio\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t')} onMouseLeave={() => setItemFrases4('Programador & Desarrollador;')} > {itemFrases4} </h3> </Link>
+			<Link to='/glosario'> <h3 style={css} onMouseEnter={() => setItemFrases5('Glosario\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t')} onMouseLeave={() => setItemFrases5('Cibernetista & Humanista.')} > {itemFrases5} </h3> </Link>
 		</>
 	)
 }
@@ -348,6 +333,73 @@ function Contacto(){
 	)
 }
 
+
+function Glosario(){
+	let datos = [
+		{
+			concepto: 'Capitalismo. ',
+			acepcion: 'The economic system based on private property and private enterprise...',
+			cita: '...oxford',
+			key: 1
+		},
+		{
+			concepto: 'Liberalismo. ',
+			acepcion: 'family of political philosophies, and a set of associated institutions and policies, that give primacy to the protection of basic liberty...',
+			cita: '...oxford',
+			key: 2
+		},
+		{
+			concepto: 'Neoliberalismo. ',
+			acepcion: 'término con varios orígenes distintos. Uno primero parece encontrarse en algunos escritos de von Mises; uno segundo es el que le atribuye a la creación colectiva de un coloquio convocado por Walter Lippman la autoría del término; uno tercero es el que lo vincula a la llamada economía social de mercado; y uno cuarto, a la escuela liberal italiana de las entreguerras...',
+			cita: '...oxford',
+			key: 3
+		},
+		{
+			concepto: 'Socialismo. ',
+			acepcion: 'The idea that the economy\'s resources should be used in the interests of all its citizens, rather than allowing private...', 
+			cita: '...oxford',
+			key: 4
+		},
+		{
+			concepto: 'Comunismo. ',
+			acepcion: 'A theory of classless society with common ownership of property and wealth and centrally planned production and distribution based on ... (oxford)',
+			cita: '...oxford',
+			key: 5
+		},
+	];
+
+	let contenido = {
+		maxWidth: '600px',
+		margin: '0 auto',
+		fontFamily: 'kepler-std-light',
+		fontSize: '1.1875rem',
+		lineHeight: 1.625,
+		fontKerning: 'auto',
+	}
+
+	let titulo = {
+		fontFamily: 'geomanist-regular',
+		fontSize: '2.25rem',
+		fontWeight: 400,
+		textAlign: 'center',
+		fontKerning: 'normal',
+	}
+
+	return (
+		<article style={ contenido }>
+			<h3 style={ titulo }> Glosario </h3>
+			{datos.map((dato) => {
+				return (
+					<div key={dato.key} >
+						<p> <span> {dato.concepto} </span> <span> {dato.acepcion} </span>	</p>					
+					</div>
+				)
+			})}
+		</article>
+	)
+}
+
+
 function App(){
 	return (
 		<>
@@ -364,4 +416,4 @@ function App(){
 	);
 }
 
-export {App, Acerca, Contacto, Blog, PostUnico, NoExiste}
+export {App, Acerca, Contacto, Blog, PostUnico, Glosario, NoExiste}
