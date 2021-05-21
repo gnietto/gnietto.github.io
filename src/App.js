@@ -1,72 +1,48 @@
 import React, { useState } from 'react';
 import { Link } from '@reach/router';
 import posts from './posts';
-import './App.css';
+import peep from './peep-52.svg';
 
-function NoExiste(){
-		let contenido = {
-		maxWidth: '600px',
-		margin: '0 auto',
-		fontFamily: 'kepler-std-light',
-		fontSize: '1.1875rem',
-		lineHeight: 1.625,
-		fontKerning: 'auto',
-	};
 
+
+function NoExiste({ className }){
 	return (
-		<b style={ contenido } > La página que ud. está buscando no existe </b>
+		<b className={ className } > La página que ud. está buscando no existe </b>
 	)
 }
 
-function ContenedorGrid({ children }){
-	let css = {
-		display: 'grid',
-		gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-		gridAutoFlow: 'dense',
-		gridGap: '.15rem .15rem',
-		margin: '0 0',
-	};
 
-	let card = {
-		backgroundColor: 'rgba(8, 226, 110, 0.81)',
-		padding: '1rem',
-		textAlign: 'center', 
-	};
-
-	let titulo = {
-		fontFamily: 'geomanist-regular',
-		fontSize: '1.65rem',
-		fontWeight: 400,
-		textDecoration: 'none',
-		color: '#000',
-	};
-
-	let descripcion = {
-		fontFamily: 'kepler-std-light',
-		fontSize: '1.1875rem',
-		lineHeight: 1.1,
-	};
-
-	let listaApps = [    
+function ContenedorGrid({ children, className }){
+	let listaApps = [
 		{
 			"app": 'Integración Webpay',
 			"url": '#',
-			"descripcion": 'Integración con Webpay usando Nodejs SDK (pendiente)',
+			"descripcion": 'Integración con Webpay usando Nodejs SDK de Transbank (pendiente)',
 		},
 				{
-			"app": 'App con portal privado',
+			"app": 'Autenticación',
 			"url": '#',
-			"descripcion": 'App con portal privado para usuarios registrados levantado con Reactjs + Firebase (pendiente)',
+			"descripcion": 'App con autenticación de usuarios levantado con Reactjs + Firebase (pendiente)',
 		},
-				{
-			"app": 'Clon LinkedIn',
+		{
+			"app": 'LinkedIn',
 			"url": '#',
-			"descripcion": 'Clon de LinkedIn levantado con Reactjs + Firebase (pendiente)',      
+			"descripcion": 'Clon de LinkedIn levantado con Reactjs + Firebase (pendiente)',   
+		},
+		{
+			"app": 'Whatsapp',
+			"url": '#',
+			"descripcion": 'Clon de Whatsapp levantado con Reactjs + Firebase (pendiente)',
+		},
+		{
+			"app": 'Maps',
+			"url": '#',
+			"descripcion": 'Clon de Google Maps levantado con Reactjs + Firebase (pendiente)',
 		},
 		{
 			"app": 'The Cybernetist',
 			"url": 'https://thecybernetist.herokuapp.com',
-			"descripcion": 'Copia de blog personal levantado con Nodejs/Stylus/Pug',
+			"descripcion": 'Blog personal levantado con Nodejs/Stylus/Pug',
 		},
 		{
 			"app": 'FrutaKids',
@@ -99,30 +75,30 @@ function ContenedorGrid({ children }){
 			"descripcion": 'Previsualización de texto desde Markdown a HTML',
 		},
 		{
-			"app": 'Documentación Técnica Redux',
+			"app": 'Documentación @redux/toolkit',
 			"url": 'https://gnietto.github.io/resumenredux',
-			"descripcion": 'Resumen de la documentación técnica de la librería Redux',
+			"descripcion": 'Resumen de la documentación técnica de @redux/toolkit',
 		},
 		{
 			"app": 'Tuba Landing Page',
 			"url": 'https://gnietto.github.io/tubalanding',
-			"descripcion": 'Página de aterrizaje experimental',
+			"descripcion": 'Página de aterrizaje para venta de instrumentos musicales',
 		},
 		{
 			"app": 'Horóscopo',
 			"url": 'https://gnietto.github.io/horoscopo',
-			"descripcion": 'Horóscopo basado en formularios HTML',
+			"descripcion": 'Horóscopo basado en formularios HTML (pendiente)',
 		}
 	];
 
 	return (
-		<div style={css} id='apps'>			
+		<div className={'grid'} id='apps'>			
 			{          
 				listaApps.map((app, index) => {
 					return (              
-						<div key={index} style={card}>
-							<a href={app.url}  style={titulo} target='_blank' rel='noopener noreferrer'> {app.app} </a>
-							<p style ={descripcion}> {app.descripcion} </p>
+						<div key={index} className={'card'}>
+							<a href={app.url}  className={'card_titulo'} target='_blank' rel='noopener noreferrer'> {app.app} </a>
+							<p className={'card_descripcion'}> {app.descripcion} </p>
 						</div>
 					)
 				})
@@ -131,115 +107,80 @@ function ContenedorGrid({ children }){
 	)
 }
 
-function Frases(){
+
+function Frases({ className }){
 	let [itemFrases1, setItemFrases1] = useState('Hola,')
 	let [itemFrases2, setItemFrases2] = useState('Soy')
 	let [itemFrases3, setItemFrases3] = useState('Germán:')
-	let [itemFrases4, setItemFrases4] = useState('Programador & Desarrollador;')
-	let [itemFrases5, setItemFrases5] = useState('Cibernetista & Humanista,')
-
-	let css = {
-		fontFamily: 'geomanist-regular',
-		fontSize: '2.5rem',
-		fontWeight: 400,		
-		color: '#000',
-		padding: 0,
-		margin: 0,
-	};
+	let [itemFrases4, setItemFrases4] = useState('Programador;')
+	let [itemFrases5, setItemFrases5] = useState('Cibernetista;')
+	let [itemFrases6, setItemFrases6] = useState('& Humanista;')
 
 	return (
 		<>
-			<Link to='/acerca'> <h3 style={css} onMouseEnter={() => setItemFrases1('Acerca de')} onMouseLeave={() => setItemFrases1('Hola')} > {itemFrases1} </h3> </Link>
-			<Link to='/blog'> <h3 style={css} onMouseEnter={() => setItemFrases2('Blog')} onMouseLeave={() => setItemFrases2('Yo soy')} > {itemFrases2} </h3> </Link>
-			<Link to='/contacto'> <h3 style={css} onMouseEnter={() => setItemFrases3('Contacto')} onMouseLeave={() => setItemFrases3('Germán')} > {itemFrases3} </h3> </Link>
-			<Link to='#apps'> <h3 style={css} onMouseEnter={() => setItemFrases4('Portafolio\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t')} onMouseLeave={() => setItemFrases4('Programador & Desarrollador;')} > {itemFrases4} </h3> </Link>
-			<Link to='/glosario'> <h3 style={css} onMouseEnter={() => setItemFrases5('Glosario\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t')} onMouseLeave={() => setItemFrases5('Cibernetista & Humanista.')} > {itemFrases5} </h3> </Link>
+			<Link to='/acerca' className={'links'}> <h3 onMouseEnter={() => setItemFrases1('Acerca de')} onMouseLeave={() => setItemFrases1('Hola')} > {itemFrases1} </h3> </Link>
+			<Link to='/blog' className={'links'}> <h3 onMouseEnter={() => setItemFrases2('Blog')} onMouseLeave={() => setItemFrases2('Soy')} > {itemFrases2} </h3> </Link>
+			<Link to='/contacto' className={'links'}> <h3 onMouseEnter={() => setItemFrases3('Contacto')} onMouseLeave={() => setItemFrases3('Germán:')} > {itemFrases3} </h3> </Link>
+			<Link to='#apps' className={'links'}> <h3 onMouseEnter={() => setItemFrases4('Portafolio')} onMouseLeave={() => setItemFrases4('Programador;')} > {itemFrases4} </h3> </Link>
+			<Link to='/glosario' className={'links'}> <h3 onMouseEnter={() => setItemFrases5('Glosario')} onMouseLeave={() => setItemFrases5('Cibernetista;')} > {itemFrases5} </h3> </Link>
+			<Link to='/glosario' className={'links'}> <h3 onMouseEnter={() => setItemFrases6('Glosario')} onMouseLeave={() => setItemFrases6('& Humanista;')} > {itemFrases6} </h3> </Link>
 		</>
 	)
 }
 
-function ContenedorFrases({ children }){
-	let centrar = {
-		display: 'flex',
-		flexDirection: 'column',
-		justifyContent: 'center',
-		alignItems: 'flex-start',
-		padding: '4rem 0 4rem 4rem',
-	}
 
+function Imagen({ url, alt, className }) {
 	return (
-		<div style={centrar}> {children} </div>
+		<>
+			<img src={url} alt={alt} className={className} />
+		</>
 	)
 }
 
-function Secciones( {children} ){
-	let seccion = {
-		backgroundColor: '#fff',
-	};
+
+function ContenedorFrases({ className, children }){
 	return (
-		<section style={ seccion }> {children} </section>
+		<div className={ className }> {children} </div>
+	)
+}
+
+
+function Secciones( {children, className} ){
+	return (
+		<section className={ className }> {children} </section>
 	);
 }
 
 
-function Acerca(){
-	let contenido = {
-		maxWidth: '600px',
-		margin: '0 auto',
-		fontFamily: 'kepler-std-light',
-		fontSize: '1.1875rem',
-		lineHeight: 1.625,
-		fontKerning: 'auto',
-	}
-
-	let titulo = {
-		fontFamily: 'geomanist-regular',
-		fontSize: '2.25rem',
-		fontWeight: 400,
-		textAlign: 'center',
-		fontKerning: 'normal',
-	}
-
-	let parrafo = {
-		margin: '0 0 2.36rem 0',
-	}
+function Acerca({ className }){
+	let textos = [
+		'Acerca de',
+		'Hola! Mi nombre es Germán. Desempeño mi trabajo ligado a las tecnologías de la información usando Javascript y su ecosistema. Escogí voluntariamente desempeñar los roles personales de programador, cibernetista & humanista.',
+		'Creo que es importante entender los flujos de acontecimientos tanto de los que somos parte como de los que (aparentemente) no somos parte. Entender estos flujos, que por regla general son más grandes que nosotros y/o tienen mayor alcance que nuestro horizonte de entendimiento, puede volverse confuso rápidamente. Es como tratar de mirarse directamente la punta de la nariz o tratar de encapsular humo con las manos.',
+		'Este sitio plasma un collage de preferencias personales que se actualizan en forma incremental. Espero que los lectores de estas líneas puedan encontrar algo de inspiración de los contenidos y puntos de vista presentados en este espacio de Internet.'
+	]
 
 	return (
-		<article style={ contenido }>
-			<h3 style={ titulo }>Acerca de</h3>
-			<p style={ parrafo }>Hola! Mi nombre es Germán. Desempeño mi trabajo ligado a las tecnologías de la información usando Javascript y su ecosistema. Pronto sumaré Python y su ecosistema. Escogí voluntariamente desempeñar los roles personales de programador, cibernetista & humanista. </p> 
-			<p style={ parrafo }>Como una breve declaración de principios, creo que es importante crear entidades (software, relaciones, textos, organizaciones, etc.) que sean basados en la verdad, útiles para los demás y útiles para uno mismo. A la vez creo que es importante entender los flujos de acontecimientos tanto de los que somos parte como de los que (aparentemente) no somos parte. Entender estos flujos, que por regla general son más grandes que nosotros y/o tienen mayor alcance que nuestro horizonte de entendimiento, puede volverse confuso rápidamente. Es como tratar de mirarse directamente la punta de la nariz o tratar de encapsular humo con las manos. </p>
-			<p style={ parrafo }>Este portafolio plasma un collage de mis preferencias personales que se actualizan en forma incremental. Espero que los lectores de estas líneas puedan encontrar algo de inspiración de los contenidos de este espacio en Internet.</p>
+		<article className={ 'article' }>
+			<h3 className={ 'article_titulo' }> {textos[0]} </h3>
+			<p className={ 'article_parrafo' }> {textos[1]} </p> 
+			<p className={ 'article_parrafo' }> {textos[2]} </p>
+			<p className={ 'article_parrafo' }> {textos[3]} </p>
 		</article>
 	)
 }
 
+
 function Blog(){
-	let contenido = {
-		maxWidth: '600px',
-		margin: '0 auto',
-		fontFamily: 'kepler-std-light',
-		fontSize: '1.1875rem',
-		lineHeight: 1.625,
-		fontKerning: 'auto',
-	}
-
-	let titulo = {
-		fontFamily: 'geomanist-regular',
-		fontSize: '2.25rem',
-		fontWeight: 400,
-		textAlign: 'center',
-		fontKerning: 'normal',
-	}
-
-	let parrafo = {
-		margin: '0 0 2.36rem 0',
-	}
+	let texto = [
+		'Blog',
+		'Bienvenidos! Estos posts son escritos de acuerdo a alguno de los 4 "lentes de percepción de la realidad" que dispongo: programación, cibernética, humanismo o todo eso junto a la vez. Sumado a eso, es probable que opte por publicar algunos posts traducidos del inglés que me parezcan interesantes de compartir.',
+	]
 
 	return (
-		<article style={ contenido }>
-			<h3 style={ titulo }> Blog </h3>
-			<p style={ parrafo } >Bienvenidos a mis "lentes de percepción de la realidad". Estos posts son escritos de acuerdo a alguno de los 4 "lentes de percepción de la realidad" principales que dispongo: programación, cibernética, humanismo o todo eso junto a la vez. Probablemente opte por publicar algunos posts traducidos del inglés que me parezcan interesantes de compartir. </p>
+		<article className={ 'article' }>
+			<h3 className={ 'article_titulo' }> {texto[0]} </h3>
+			<p className={ 'article_parrafo' }> {texto[1]} </p>
 			<ListaPosts />
 		</article>
 	)
@@ -249,7 +190,7 @@ function ListaPosts(){
 	return (
 		<>
 			{
-				(posts.length === 0) ? <b>Sin posts aun</b> : 
+				(posts.length === 0) ? <b className={'article_parrafo'} >Sin posts aun</b> : 
 				(posts.map((item) => {
 					return (
 						<article key={ item.key }>
@@ -266,23 +207,6 @@ function ListaPosts(){
 }
 
 function PostUnico(props){
-	let contenido = {
-	maxWidth: '600px',
-	margin: '0 auto',
-	fontFamily: 'kepler-std-light',
-	fontSize: '1.1875rem',
-	lineHeight: 1.625,
-	fontKerning: 'auto',
-	}
-
-	let titulo = {
-		fontFamily: 'geomanist-regular',
-		fontSize: '2.25rem',
-		fontWeight: 400,
-		textAlign: 'center',
-		fontKerning: 'normal',
-	}
-
 	return (
 		<>
 			{
@@ -293,9 +217,9 @@ function PostUnico(props){
 
 				.map((datumfiltrado) => {
 					return (
-						<div key={ datumfiltrado.key } >
-								<p style={titulo}> { datumfiltrado.titulo } </p>
-								<p style={contenido}> { datumfiltrado.texto } </p>
+						<div key={ datumfiltrado.key } className={'article'} >
+								<p className={'article_titulo'}> { datumfiltrado.titulo } </p>
+								<p className={'article_parrafo'}> { datumfiltrado.texto } </p>
 						</div>
 					)
 				})
@@ -306,29 +230,12 @@ function PostUnico(props){
 
 
 function Contacto(){
-	let contenido = {
-		maxWidth: '600px',
-		margin: '0 auto',
-		fontFamily: 'kepler-std-light',
-		fontSize: '1.1875rem',
-		lineHeight: 1.625,
-		fontKerning: 'auto',
-	}
-
-	let titulo = {
-		fontFamily: 'geomanist-regular',
-		fontSize: '2.25rem',
-		fontWeight: 400,
-		textAlign: 'center',
-		fontKerning: 'normal',
-	}
-
 	return (
-		<article style={ contenido }>
-			<h3 style={ titulo }> Hablemos </h3>
-			<p>LinkedIn /gnietto</p>
-			<p>Github /gnietto</p>
-			<p>Correo gnietto [en servidor de correo] pm.me</p>
+		<article className={ 'article' }>
+			<h3 className={ 'article_titulo' }> Hablemos </h3>
+			<p className={''} >LinkedIn /gnietto</p>
+			<p className={''}>Github /gnietto</p>
+			<p className={''}>Correo gnietto [en servidor de correo] pm.me</p>
 		</article>
 	)
 }
@@ -344,15 +251,9 @@ function Glosario(){
 		},
 		{
 			concepto: 'Liberalismo. ',
-			acepcion: 'family of political philosophies, and a set of associated institutions and policies, that give primacy to the protection of basic liberty...',
+			acepcion: 'family of political philosophies, and a set of associated institutions and policies, that give primacy to the protection of basic liberty... El concepto de neoliberalismo puede rastrearse a varios orígenes distintos. Uno primero parece encontrarse en algunos escritos de von Mises; uno segundo es el que le atribuye a la creación colectiva de un coloquio convocado por Walter Lippman la autoría del término; uno tercero es el que lo vincula a la llamada economía social de mercado; y uno cuarto, a la escuela liberal italiana de las entreguerras...',
 			cita: '...oxford',
 			key: 2
-		},
-		{
-			concepto: 'Neoliberalismo. ',
-			acepcion: 'término con varios orígenes distintos. Uno primero parece encontrarse en algunos escritos de von Mises; uno segundo es el que le atribuye a la creación colectiva de un coloquio convocado por Walter Lippman la autoría del término; uno tercero es el que lo vincula a la llamada economía social de mercado; y uno cuarto, a la escuela liberal italiana de las entreguerras...',
-			cita: '...oxford',
-			key: 3
 		},
 		{
 			concepto: 'Socialismo. ',
@@ -368,33 +269,17 @@ function Glosario(){
 		},
 	];
 
-	let contenido = {
-		maxWidth: '600px',
-		margin: '0 auto',
-		fontFamily: 'kepler-std-light',
-		fontSize: '1.1875rem',
-		lineHeight: 1.625,
-		fontKerning: 'auto',
-	}
-
-	let titulo = {
-		fontFamily: 'geomanist-regular',
-		fontSize: '2.25rem',
-		fontWeight: 400,
-		textAlign: 'center',
-		fontKerning: 'normal',
-	}
-
 	return (
-		<article style={ contenido }>
-			<h3 style={ titulo }> Glosario </h3>
-			{datos.map((dato) => {
-				return (
-					<div key={dato.key} >
-						<p> <span> {dato.concepto} </span> <span> {dato.acepcion} </span>	</p>					
-					</div>
-				)
-			})}
+		<article className={ 'article' }>
+			<h3 className={ 'article_titulo' }> Glosario </h3>
+			<p className={'article_parrafo'}> Considerando los tiempos de agitación sociopolítica que vivimos desde el año 2019 a la fecha, y considerando la confusión de conceptos y narrativas que los aprendizajes sociales previos han facilitado, y que los medios de comunicación han viralizado, decidí desenrredar el hilo narrativo sociopolítico publicando un glosario en mi sitio. Espero que sea de provecho para mis lectores. </p>
+				{datos.map((dato) => {
+					return (
+						<div key={dato.key} className={'article_parrafo'} >
+							<p> <b> {dato.concepto} </b> <span> {dato.acepcion} </span>	</p>					
+						</div>
+					)
+				})}
 		</article>
 	)
 }
@@ -403,10 +288,11 @@ function Glosario(){
 function App(){
 	return (
 		<>
-			<Secciones>
-				<ContenedorFrases>
-					<Frases />
+			<Secciones className={'flexbox'}>
+				<ContenedorFrases className={'frases_centrar'}>
+					<Frases className={'frases links'} />
 				</ContenedorFrases>
+				<Imagen url={peep} alt='adulto joven señalando hacia el menú' className={'dibujo'} />
 			</Secciones>
 		
 			<Secciones>
