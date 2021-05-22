@@ -156,7 +156,7 @@ function Acerca({ className }){
 	let textos = [
 		'Acerca de',
 		'Hola! Mi nombre es Germán. Desempeño mi trabajo ligado a las tecnologías de la información usando Javascript y su ecosistema. Escogí voluntariamente desempeñar los roles personales de programador, cibernetista & humanista.',
-		'Creo que es importante entender los flujos de acontecimientos tanto de los que somos parte como de los que (aparentemente) no somos parte. Entender estos flujos, que por regla general son más grandes que nosotros y/o tienen mayor alcance que nuestro horizonte de entendimiento, puede volverse confuso rápidamente. Es como tratar de mirarse directamente la punta de la nariz o tratar de encapsular humo con las manos.',
+		'Parte de la razón de escoger estos roles personales reside en que creo importante entender los flujos de acontecimientos tanto de los que somos parte como de los que (aparentemente) no somos parte. Entender estos flujos, que por regla general son más grandes que nosotros y/o tienen mayor alcance que nuestro horizonte de entendimiento, puede volverse confuso rápidamente. Es como tratar de mirarse directamente la punta de la nariz o tratar de encapsular humo con las manos.',
 		'Este sitio plasma un collage de preferencias personales que se actualizan en forma incremental. Espero que los lectores de estas líneas puedan encontrar algo de inspiración de los contenidos y puntos de vista presentados en este espacio de Internet.'
 	]
 
@@ -174,7 +174,7 @@ function Acerca({ className }){
 function Blog(){
 	let texto = [
 		'Blog',
-		'Bienvenidos! Estos posts son escritos de acuerdo a alguno de los 4 "lentes de percepción de la realidad" que dispongo: programación, cibernética, humanismo o todo eso junto a la vez. Sumado a eso, es probable que opte por publicar algunos posts traducidos del inglés que me parezcan interesantes de compartir.',
+		'Bienvenidos! Estos posts son escritos de acuerdo a alguno de los 4 "lentes de percepción de la realidad" que dispongo: programación, cibernética, humanismo o todo eso junto a la vez. Es probable que opte también por publicar algunos posts traducidos del inglés que me parezcan interesantes de compartir.',
 	]
 
 	return (
@@ -242,41 +242,113 @@ function Contacto(){
 
 
 function Glosario(){
-	let datos = [
+	let filopol = [
 		{
-			concepto: 'Capitalismo. ',
-			acepcion: 'The economic system based on private property and private enterprise...',
-			cita: '...oxford',
+			concepto: 'Liberalismo. ',
+			acepcion: 'Familia de filosofías/teorías políticas que crea una arquitectura de sociedad que otorga primacía a la protección de libertades básicas de las personas naturales en relación a sus gobiernos (Oxford, _). Basado en lo anterior, se construye una arquitectura económica que enfatiza la importancia de los mercados (intercambios voluntarios de bienes y servicios) y un rol limitado y específico de los gobiernos (Rutherford, 2002).',
 			key: 1
 		},
 		{
-			concepto: 'Liberalismo. ',
-			acepcion: 'family of political philosophies, and a set of associated institutions and policies, that give primacy to the protection of basic liberty... El concepto de neoliberalismo puede rastrearse a varios orígenes distintos. Uno primero parece encontrarse en algunos escritos de von Mises; uno segundo es el que le atribuye a la creación colectiva de un coloquio convocado por Walter Lippman la autoría del término; uno tercero es el que lo vincula a la llamada economía social de mercado; y uno cuarto, a la escuela liberal italiana de las entreguerras...',
-			cita: '...oxford',
+			concepto: 'Neoliberalismo. ',
+			acepcion: 'Concepto denostativo con múltiples acepciones sin relación entre sí: (1) en el contexto de mercadeo político de la década de 1930, concepto usado para distinguirse de quienes profesan el liberalismo para evitar asumir sus costos sociopolíticos (2) etapa en el desarrollo del liberalismo como doctrina, carente de todo sentido peyorativo en el que se trata de destacar algunas contribuciones importantes en el mundo de las ideas, después de la teoría subjetiva del valor (3) concepto que repudia el acercamiento subrepticio de ideas del ordoliberalismo alemán con las del socialismo alemán (4) cualquier teoría de corte liberal que no profese las ideas de economía social de mercado (5) en un contexto religioso del siglo 19 donde los liberales (anticatólicos) se oponían a los creyentes (católicos), concepto usado con el fin de distinguirse de los liberales para evitar problemas (Ghersi, 2004).',
 			key: 2
 		},
 		{
 			concepto: 'Socialismo. ',
-			acepcion: 'The idea that the economy\'s resources should be used in the interests of all its citizens, rather than allowing private...', 
-			cita: '...oxford',
-			key: 4
+			acepcion: 'Filosofía/teoría política de óptica colectivista en donde la sociedad es propietaria del capital productivo (Rutherford, 2002) el cual es controlado por el Estado, otras instituciones públicas u organizaciones sin fines de lucro (Stanford, 2008); y éstas distribuyen el ingreso nacional para el beneficio de todos. Las variaciones de la organización de la economía serían (1) economía centralmente planificada o (2) economía que combina planificación central con mecanismos de mercado (socialismo de mercado) (Rutherford, 2002).',
+			key: 3
 		},
 		{
 			concepto: 'Comunismo. ',
-			acepcion: 'A theory of classless society with common ownership of property and wealth and centrally planned production and distribution based on ... (oxford)',
-			cita: '...oxford',
+			acepcion: 'Filosofía/teoría política de óptica colectivista que crea una arquitectura de sociedad con economía centralmente planificada, distribución de los ingresos de acuerdo a la necesidad, propiedad común (colectiva) del capital (Rutherford, 2002). En la práctica, muestra la uniformidad forzada del pensamiento individual en beneficio del pensamiento colectivo impuesto por sus gobiernos.',
+			key: 4
+		},
+		{
+			concepto: 'Comunitarismo. ',
+			acepcion: 'Filosofía/teoría política de óptica colectivista que se opone a la doctrina del individualismo y la aceptación del concepto de hombre económico. Es considerada como una ideología sucesora del socialismo puesto que también se opone, como éste, al liberalismo/libertarianismo (Rutherford, 2002).',
 			key: 5
 		},
+	];
+
+	let econom = [
+		{
+			concepto: 'Capitalismo. ',
+			acepcion: 'Arquitectura económica basada (1) en el fomento de mercados no regulados por el Estado para asignar recursos económicos (Rutherford, 2002), y (2) en la actividad comercial de empresas privadas y de personas naturales basada en la creación, inversión o compra/venta de activos financieros con el objetivo de generar ganancias (Collin, 2003; Stanford, 2008).',
+			key: 1
+		},
+	];
+
+	let conducta = [
+		{
+			concepto: 'x',
+			acepcion: 'y',
+			key: 1
+		}
+	];
+
+	let bibliografia = [
+		{
+			ref: 'Collin, P. (2003). Dictionary of Economics, London: ACBlack',
+			key: 1,
+		},
+		{
+			ref: 'Ghersi, E. (2004) El mito del neoliberalismo. Extraido desde https://www.elcato.org/el-mito-del-neoliberalismo',
+			key: 2,
+		},
+		{
+			ref: 'Rutherford, D. (2002). Routledge Dictionary of Economics. 2° ed. London: Routledge',		
+			key: 3,
+		},
+		{
+			ref: 'Stanford, J. (2008). Economics for Everyone: On-line Glossary of Terms & Concepts. Canadian Centre for Policy Alternatives.',
+			key: 4,
+		},
+	];
+
+	let preludio = 'Considerando que (1) estamos en tiempos de agitación sociopolítica desde el año 2019 a la fecha, (2) dicha agitación ha hecho emerger una confusión de conceptos y narrativas, (3) los medios de comunicación (TV, RRSS, radio) han facilitado y viralizado dicha confusión, (4) que esa mezcla de significados ha sido dolosamente provocada por el activismo político en los centros de alumnos en colegios/universidades y en las poblaciones; decidí contribuir a desenrredar la confusión de ese hilo narrativo sociopolítico publicando un glosario en mi sitio. Quizás evolucione hacia un tesauro. Espero que los lectores de estos bytes encuentren un aporte y una inspiración positiva para sí mismos y para el futuro del país.';
+
+	let titulos = [
+		'Filosofías (o Ideologías) Políticas',
+		'Economía & Finanzas',
+		'Conducta (o Comportamiento) Humano',
+		'Bibliografía'
 	];
 
 	return (
 		<article className={ 'article' }>
 			<h3 className={ 'article_titulo' }> Glosario </h3>
-			<p className={'article_parrafo'}> Considerando los tiempos de agitación sociopolítica que vivimos desde el año 2019 a la fecha, y considerando la confusión de conceptos y narrativas que los aprendizajes sociales previos han facilitado, y que los medios de comunicación han viralizado, decidí desenrredar el hilo narrativo sociopolítico publicando un glosario en mi sitio. Espero que sea de provecho para mis lectores. </p>
-				{datos.map((dato) => {
+			<p className={'article_parrafo'}> {preludio} </p>
+			<h3> {titulos[0]} </h3>
+				{filopol.map((dato) => {
 					return (
 						<div key={dato.key} className={'article_parrafo'} >
 							<p> <b> {dato.concepto} </b> <span> {dato.acepcion} </span>	</p>					
+						</div>
+					)
+				})}
+
+			<h3> {titulos[1]} </h3>
+				{econom.map((dato) => {
+					return (
+						<div key={dato.key} className={'article_parrafo'} >
+							<p> <b> {dato.concepto} </b> <span> {dato.acepcion} </span>	</p>					
+						</div>
+					)
+				})}
+
+			<h3> {titulos[2]} </h3>
+				{conducta.map((dato) => {
+					return (
+						<div key={dato.key} className={'article_parrafo'} >
+							<p> <b> {dato.concepto} </b> <span> {dato.acepcion} </span>	</p>					
+						</div>
+					)
+				})}
+			<h3> {titulos[3]} </h3>
+				{bibliografia.map((dato) => {
+					return (
+						<div key={dato.key} className={'article_parrafo'} >
+							<p> <span> {dato.ref} </span>	</p>					
 						</div>
 					)
 				})}
