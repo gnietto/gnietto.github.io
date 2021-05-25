@@ -120,7 +120,7 @@ function Frases({ className }){
 		<>
 			<Link to='/acerca' className={'links'}> <h3 onMouseEnter={() => setItemFrases1('Acerca de')} onMouseLeave={() => setItemFrases1('Hola')} > {itemFrases1} </h3> </Link>
 			<Link to='/blog' className={'links'}> <h3 onMouseEnter={() => setItemFrases2('Blog')} onMouseLeave={() => setItemFrases2('Soy')} > {itemFrases2} </h3> </Link>
-			<Link to='/contacto' className={'links'}> <h3 onMouseEnter={() => setItemFrases3('Contacto')} onMouseLeave={() => setItemFrases3('Germán:')} > {itemFrases3} </h3> </Link>
+			<Link to='/contacto' className={'links'}> <h3 onMouseEnter={() => setItemFrases3('Hablemos')} onMouseLeave={() => setItemFrases3('Germán:')} > {itemFrases3} </h3> </Link>
 			<Link to='#apps' className={'links'}> <h3 onMouseEnter={() => setItemFrases4('Portafolio')} onMouseLeave={() => setItemFrases4('Programador;')} > {itemFrases4} </h3> </Link>
 			<Link to='/glosario' className={'links'}> <h3 onMouseEnter={() => setItemFrases5('Glosario')} onMouseLeave={() => setItemFrases5('Cibernetista;')} > {itemFrases5} </h3> </Link>
 			<Link to='/glosario' className={'links'}> <h3 onMouseEnter={() => setItemFrases6('Glosario')} onMouseLeave={() => setItemFrases6('& Humanista;')} > {itemFrases6} </h3> </Link>
@@ -244,29 +244,39 @@ function Contacto(){
 function Glosario(){
 	let filopol = [
 		{
-			concepto: 'Liberalismo. ',
-			acepcion: 'Familia de filosofías/teorías políticas que crea una arquitectura de sociedad que otorga primacía a la protección de libertades básicas de las personas naturales en relación a sus gobiernos (Oxford, _). Basado en lo anterior, se construye una arquitectura económica que enfatiza la importancia de los mercados (intercambios voluntarios de bienes y servicios) y un rol limitado y específico de los gobiernos (Rutherford, 2002).',
+			concepto: 'Filosofía Política. ',
+			acepcion: 'En su componente teórico, es el estudio de las preguntas fundamentales acerca del Estado, gobierno, política, libertad, justicia y la obligatoriedad de la legislación. En su componente de acción, es ética aplicada a un grupo de personas en la cual se discute cómo una sociedad debiera configurarse, cómo las personas debieran actuar en una sociedad, y a los derechos individuales (a la vida, a la libertad, a la propiedad, a la conformación de una vida feliz, a la autodefensa, a la libre expresión, etc.) que una persona debiera tener para beneficiarse de la vida en sociedad (en vez de sufrirla) (Philosophy Basics, 2008).',
 			key: 1
 		},
 		{
-			concepto: 'Neoliberalismo. ',
-			acepcion: 'Concepto denostativo con múltiples acepciones sin relación entre sí: (1) en el contexto de mercadeo político de la década de 1930, concepto usado para distinguirse de quienes profesan el liberalismo para evitar asumir sus costos sociopolíticos (2) etapa en el desarrollo del liberalismo como doctrina, carente de todo sentido peyorativo en el que se trata de destacar algunas contribuciones importantes en el mundo de las ideas, después de la teoría subjetiva del valor (3) concepto que repudia el acercamiento subrepticio de ideas del ordoliberalismo alemán con las del socialismo alemán (4) cualquier teoría de corte liberal que no profese las ideas de economía social de mercado (5) en un contexto religioso del siglo 19 donde los liberales (anticatólicos) se oponían a los creyentes (católicos), concepto usado con el fin de distinguirse de los liberales para evitar problemas (Ghersi, 2004).',
+			concepto: 'Ideología Política. ',
+			acepcion: 'Conjunto de ideas, creencias, valores y opiniones que influencian (justifican, explican o cambian) los planes de acción de las políticas públicas de una comunidad política (Freeden, 2002).',
 			key: 2
+		},
+		{
+			concepto: 'Liberalismo. ',
+			acepcion: 'Familia de filosofías/teorías políticas que crea una arquitectura de sociedad que otorga primacía a la protección de libertades básicas de las personas naturales en relación a sus gobiernos (Oxford, _). Basado en lo anterior, se construye una arquitectura económica que enfatiza la importancia de los mercados (intercambios voluntarios de bienes y servicios) y un rol limitado y específico de los gobiernos (Rutherford, 2002).',
+			key: 3
+		},
+		{
+			concepto: 'Neoliberalismo. ',
+			acepcion: 'Concepto denostativo con múltiples acepciones sin relación entre sí: (1) en el contexto de mercadeo político de la década de 1930, concepto usado para distinguirse de quienes profesan el liberalismo para evitar asumir sus costos sociopolíticos (2) etapa en el desarrollo del liberalismo como doctrina, carente de todo sentido peyorativo, en el que se trata de destacar algunas contribuciones importantes en el mundo de las ideas, después de la teoría subjetiva del valor (3) concepto que repudia el acercamiento subrepticio de ideas del ordoliberalismo alemán con las del socialismo alemán (4) concepto usado por los defensores de la economía social de mercado para denotar a cualquier teoría de corte liberal que no profese las ideas de economía social de mercado (5) en un contexto religioso del siglo 19 donde los liberales (anticatólicos) se oponían a los creyentes (católicos), concepto usado por los ex-liberales con el fin de distinguirse de los liberales para evitar problemas (Ghersi, 2004).',
+			key: 4
 		},
 		{
 			concepto: 'Socialismo. ',
 			acepcion: 'Filosofía/teoría política de óptica colectivista en donde la sociedad es propietaria del capital productivo (Rutherford, 2002) el cual es controlado por el Estado, otras instituciones públicas u organizaciones sin fines de lucro (Stanford, 2008); y éstas distribuyen el ingreso nacional para el beneficio de todos. Las variaciones de la organización de la economía serían (1) economía centralmente planificada o (2) economía que combina planificación central con mecanismos de mercado (socialismo de mercado) (Rutherford, 2002).',
-			key: 3
+			key: 4
 		},
 		{
 			concepto: 'Comunismo. ',
 			acepcion: 'Filosofía/teoría política de óptica colectivista que crea una arquitectura de sociedad con economía centralmente planificada, distribución de los ingresos de acuerdo a la necesidad, propiedad común (colectiva) del capital (Rutherford, 2002). En la práctica, muestra la uniformidad forzada del pensamiento individual en beneficio del pensamiento colectivo impuesto por sus gobiernos.',
-			key: 4
+			key: 5
 		},
 		{
 			concepto: 'Comunitarismo. ',
 			acepcion: 'Filosofía/teoría política de óptica colectivista que se opone a la doctrina del individualismo y la aceptación del concepto de hombre económico. Es considerada como una ideología sucesora del socialismo puesto que también se opone, como éste, al liberalismo/libertarianismo (Rutherford, 2002).',
-			key: 5
+			key: 6
 		},
 	];
 
@@ -292,16 +302,24 @@ function Glosario(){
 			key: 1,
 		},
 		{
-			ref: 'Ghersi, E. (2004) El mito del neoliberalismo. Extraido desde https://www.elcato.org/el-mito-del-neoliberalismo',
+			ref: 'Freeden, M. (2001). Ideology: Political Aspects. En N. Smelser & P. Baltes (Eds.), International Encyclopedia of the Social & Behavioral Sciences. (1° Edición, pp. 7174-7177). Pergamon.',
 			key: 2,
 		},
 		{
-			ref: 'Rutherford, D. (2002). Routledge Dictionary of Economics. 2° ed. London: Routledge',		
+			ref: 'Ghersi, E. (2004) El mito del neoliberalismo. Extraido desde https://www.elcato.org/el-mito-del-neoliberalismo',
 			key: 3,
 		},
 		{
-			ref: 'Stanford, J. (2008). Economics for Everyone: On-line Glossary of Terms & Concepts. Canadian Centre for Policy Alternatives.',
+			ref: 'Philosophy Basics (2008). Political Philosophy. Extraido desde https://www.philosophybasics.com/branch_political.html.',
 			key: 4,
+		},
+		{
+			ref: 'Rutherford, D. (2002). Routledge Dictionary of Economics. 2° ed. London: Routledge',		
+			key: 5,
+		},
+		{
+			ref: 'Stanford, J. (2008). Economics for Everyone: On-line Glossary of Terms & Concepts. Canadian Centre for Policy Alternatives.',
+			key: 6,
 		},
 	];
 
@@ -359,7 +377,7 @@ function Glosario(){
 
 function App(){
 	return (
-		<>
+		<main>
 			<Secciones className={'flexbox'}>
 				<ContenedorFrases className={'frases_centrar'}>
 					<Frases className={'frases links'} />
@@ -367,10 +385,10 @@ function App(){
 				<Imagen url={peep} alt='adulto joven señalando hacia el menú' className={'dibujo'} />
 			</Secciones>
 		
-			<Secciones>
+			<Secciones className={'bg'}>
 				<ContenedorGrid />
 			</Secciones>
-		</>
+		</main>
 	);
 }
 
