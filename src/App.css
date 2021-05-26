@@ -66,10 +66,14 @@ time, mark, audio, video {
 	text-decoration: none;
 }
 
+.bg {
+	background-color: #e0e0e0;
+}
+
 .card {
 	border-radius: 5px;
 	background: linear-gradient(315deg, #cacaca, #f0f0f0);
-	box-shadow:  -9px -9px 3px #676767, 9px 9px 3px #ffffff;
+	box-shadow:  6px -6px 12px #949494, -6px 6px 12px #ffffff;
 }
 
 .card_descripcion {
@@ -135,5 +139,18 @@ time, mark, audio, video {
 }
 
 .links:hover {
+	position: relative;
+	animation-name: subir;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
 	color: red;
+}
+
+@keyframes subir {
+	0% {
+		bottom: 0;
+		}
+	100% {
+		bottom: 10px;
+	}
 }
