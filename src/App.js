@@ -15,6 +15,11 @@ function NoExiste({ className }){
 function ContenedorGrid({ children, className }){
 	let listaApps = [
 		{
+			"app": 'Maps',
+			"url": 'https://gnietto.github.io/maps',
+			"descripcion": 'Clon de Google Maps básico',
+		},
+		{
 			"app": 'Integración Webpay',
 			"url": '#',
 			"descripcion": 'Integración con Webpay usando Nodejs SDK de Transbank (pendiente)',
@@ -32,12 +37,7 @@ function ContenedorGrid({ children, className }){
 		{
 			"app": 'Whatsapp',
 			"url": '#',
-			"descripcion": 'Clon de Whatsapp levantado con Reactjs + Firebase (pendiente)',
-		},
-		{
-			"app": 'Maps',
-			"url": '#',
-			"descripcion": 'Clon de Google Maps levantado con Reactjs + Firebase (pendiente)',
+			"descripcion": '(pendiente)',
 		},
 		{
 			"app": 'The Cybernetist',
