@@ -253,7 +253,7 @@ function Glosario(){
 		},
 		{
 			concepto: 'Liberalismo. ',
-			acepcion: 'Familia de filosofías/teorías políticas que crea una arquitectura de sociedad que otorga primacía a la protección de libertades básicas de las personas naturales en relación a sus gobiernos (Oxford, _). Basado en lo anterior, se construye una arquitectura económica que enfatiza la importancia de los mercados (intercambios voluntarios de bienes y servicios) y un rol limitado y específico de los gobiernos (Rutherford, 2002).',
+			acepcion: 'Familia de filosofías/teorías políticas que crea una arquitectura de sociedad que otorga primacía a la protección de libertades básicas de las personas naturales en relación a sus gobiernos. Basado en lo anterior, se construye una arquitectura económica que enfatiza la importancia de los mercados (intercambios voluntarios de bienes y servicios) y un rol limitado y específico de los gobiernos (Rutherford, 2002).',
 			key: 3
 		},
 		{
@@ -273,7 +273,7 @@ function Glosario(){
 		},
 		{
 			concepto: 'Comunitarismo. ',
-			acepcion: 'Filosofía/teoría política de óptica colectivista que se opone a la doctrina del individualismo. Es considerada como una ideología sucesora del socialismo puesto que también se opone, como éste, al liberalismo/libertarianismo (Rutherford, 2002).',
+			acepcion: 'Filosofía/teoría política de óptica colectivista que se opone a la doctrina del individualismo. Es considerada como una ideología sucesora del socialismo puesto que también se opone, como éste, al liberalismo/libertarianismo (Rutherford, 2002). Puede ser visto como una ideología radical de centro que afirma que los principios centrales de ambos lados del espectro político pueden ser reconciliados. Se enfoca en la sociedad y las comunidades, buscando priorizar los objetivos de los grupos por sobre los objetivos de los individuos. Para conseguir los objetivos del grupo, los comunitaristas enfatizan el uso de organizaciones no gubernamentales (en su mayor parte). Es descrito a veces como izquierdista en temas económicos y como conservador en temas sociales (Philosophy Basics, 2008).',
 			key: 6
 		},
 	];
