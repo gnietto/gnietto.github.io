@@ -109,21 +109,19 @@ function ContenedorGrid({ children, className }){
 
 
 function Frases({ className }){
-	let [itemFrases1, setItemFrases1] = useState('Hola,')
-	let [itemFrases2, setItemFrases2] = useState('Soy')
-	let [itemFrases3, setItemFrases3] = useState('Germán:')
+	let [itemFrases1, setItemFrases1] = useState('Hola, soy')
+	let [itemFrases3, setItemFrases3] = useState('Germán')
 	let [itemFrases4, setItemFrases4] = useState('Programador;')
 	let [itemFrases5, setItemFrases5] = useState('Cibernetista;')
 	let [itemFrases6, setItemFrases6] = useState('& Humanista;')
 
 	return (
 		<>
-			<Link to='/acerca' className={'links'}> <h3 onMouseEnter={() => setItemFrases1('Acerca de')} onMouseLeave={() => setItemFrases1('Hola')} > {itemFrases1} </h3> </Link>
-			<Link to='/blog' className={'links'}> <h3 onMouseEnter={() => setItemFrases2('Blog')} onMouseLeave={() => setItemFrases2('Soy')} > {itemFrases2} </h3> </Link>
-			<Link to='/contacto' className={'links'}> <h3 onMouseEnter={() => setItemFrases3('Hablemos')} onMouseLeave={() => setItemFrases3('Germán:')} > {itemFrases3} </h3> </Link>
+			<Link to='/acerca' className={'links'}> <h3 onMouseEnter={() => setItemFrases1('Acerca de')} onMouseLeave={() => setItemFrases1('Hola, soy')} > {itemFrases1} </h3> </Link>
+			<Link to='/blog' className={'links'}> <h3 onMouseEnter={() => setItemFrases3('Blog')} onMouseLeave={() => setItemFrases3('Germán')} > {itemFrases3} </h3> </Link>
 			<Link to='#apps' className={'links'}> <h3 onMouseEnter={() => setItemFrases4('Portafolio')} onMouseLeave={() => setItemFrases4('Programador;')} > {itemFrases4} </h3> </Link>
 			<Link to='/glosario' className={'links'}> <h3 onMouseEnter={() => setItemFrases5('Glosario')} onMouseLeave={() => setItemFrases5('Cibernetista;')} > {itemFrases5} </h3> </Link>
-			<Link to='/glosario' className={'links'}> <h3 onMouseEnter={() => setItemFrases6('Glosario')} onMouseLeave={() => setItemFrases6('& Humanista;')} > {itemFrases6} </h3> </Link>
+			<Link to='/contacto' className={'links'}> <h3 onMouseEnter={() => setItemFrases6('Hablemos')} onMouseLeave={() => setItemFrases6('& Humanista;')} > {itemFrases6} </h3> </Link>
 		</>
 	)
 }
@@ -275,7 +273,7 @@ function Glosario(){
 		},
 		{
 			concepto: 'Comunitarismo. ',
-			acepcion: 'Filosofía/teoría política de óptica colectivista que se opone a la doctrina del individualismo y la aceptación del concepto de hombre económico. Es considerada como una ideología sucesora del socialismo puesto que también se opone, como éste, al liberalismo/libertarianismo (Rutherford, 2002).',
+			acepcion: 'Filosofía/teoría política de óptica colectivista que se opone a la doctrina del individualismo. Es considerada como una ideología sucesora del socialismo puesto que también se opone, como éste, al liberalismo/libertarianismo (Rutherford, 2002).',
 			key: 6
 		},
 	];
@@ -385,7 +383,7 @@ function App(){
 				<Imagen url={peep} alt='adulto joven señalando hacia el menú' className={'dibujo'} />
 			</Secciones>
 		
-			<Secciones className={'bg'}>
+			<Secciones>
 				<ContenedorGrid />
 			</Secciones>
 		</main>

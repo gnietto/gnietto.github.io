@@ -60,10 +60,11 @@ time, mark, audio, video {
 .article_titulo {
 	color: #000;
 	font-family: 'geomanist-regular';
-	font-size: 2rem;
+	font-size: 2.25rem;
 	font-weight: 400;
 	text-align: center;
 	text-decoration: none;
+	text-rendering: optimizeLegibility;
 }
 
 .bg {
@@ -71,16 +72,17 @@ time, mark, audio, video {
 }
 
 .card {
-	border-radius: 5px;
-	background: linear-gradient(315deg, #cacaca, #f0f0f0);
-	box-shadow:  6px -6px 12px #949494, -6px 6px 12px #ffffff;
+	border-radius: 13px;
+	background: linear-gradient(225deg, #e6e6e6, #ffffff);
+	box-shadow:  -8px 8px 16px #757575, 8px -8px 16px #ffffff;
+	text-align: center;
 }
 
 .card_descripcion {
 	font-family: 'kepler-std-light';
 	font-size: 1.1875rem;
 	line-height: 1.1;
-	padding: 0 0 1rem 0;
+	padding: 0 .5rem 1rem .5rem;
 }
 
 .card_titulo {
@@ -88,7 +90,6 @@ time, mark, audio, video {
 	font-family: 'geomanist-regular';
 	font-size: 1.65rem;
 	font-weight: 400;
-	text-align: center;
 	text-decoration: none;
 }
 
