@@ -273,9 +273,14 @@ function Glosario(){
 		},
 		{
 			concepto: 'Comunitarismo. ',
-			acepcion: 'Filosofía/teoría política de óptica colectivista que se opone a la doctrina del individualismo. Es considerada como una ideología sucesora del socialismo puesto que también se opone, como éste, al liberalismo/libertarianismo (Rutherford, 2002). Puede ser visto como una ideología radical de centro que afirma que los principios centrales de ambos lados del espectro político pueden ser reconciliados. Se enfoca en la sociedad y las comunidades, buscando priorizar los objetivos de los grupos por sobre los objetivos de los individuos. Para conseguir los objetivos del grupo, los comunitaristas enfatizan el uso de organizaciones no gubernamentales (en su mayor parte). Es descrito a veces como izquierdista en temas económicos y como conservador en temas sociales (Philosophy Basics, 2008).',
+			acepcion: 'Filosofía/teoría política de óptica colectivista que se opone a la doctrina del individualismo. Es considerada como una ideología sucesora del socialismo puesto que también se opone, como éste, al liberalismo y/o al libertarianismo (Rutherford, 2002). Puede ser visto como una ideología radical de centro que afirma que los principios centrales de ambos lados del espectro político pueden ser reconciliados. Se enfoca en la sociedad y las comunidades, buscando priorizar los objetivos de los grupos por sobre los objetivos de los individuos. Para conseguir los objetivos del grupo, los comunitaristas enfatizan el uso de organizaciones no gubernamentales (en su mayor parte). Es descrito a veces como izquierdista en temas económicos y como conservador en temas sociales (Philosophy Basics, 2008).',
 			key: 6
 		},
+		{
+			concepto: 'Fascismo. ',
+			acepcion: 'Filosofía/teoría politica nacionalista que exalta la nación o la raza sobre los individuos, y que instaura un gobierno autocrático centralizado encabezado por un líder dictatorial, un régimen severo en lo social y lo económico, y la supresión de la oposición a través del uso de la fuerza (Philosophy Basics, 2008).',
+			key: '7'
+		}
 	];
 
 	let econom = [
@@ -283,6 +288,16 @@ function Glosario(){
 			concepto: 'Capitalismo. ',
 			acepcion: 'Arquitectura económica basada (1) en el fomento de mercados no regulados por el Estado para asignar recursos económicos (Rutherford, 2002), y (2) en la actividad comercial de empresas privadas y de personas naturales basada en la creación, inversión o compra/venta de activos financieros con el objetivo de generar ganancias (Collin, 2003; Stanford, 2008).',
 			key: 1
+		},
+		{
+			concepto: 'Socialismo de Mercado. ',
+			acepcion: 'Arquitectura económica en la que existe una economía de mercado dirigida y guiada por planificadores socialistas, y donde los precios se definen por ensayo y error (ajustando según ocurran infravaloraciones o sobrevaloraciones), en vez de confiar en el mecanismo de libre flotación de precios (Philosophy Basics, 2008).',
+			key: '2'
+		},
+		{
+			concepto: 'Economía de Mercado Socialista (o Capitalismo de Estado). ',
+			acepcion: 'Arquitectura económica donde las empresas más grandes son propiedad de entidades del Estado. Las empresas del Estado compiten unas contra otras dentro de un sistema de precios definido por el mercado y el Estado usualmente no interviene en la fijación de precios (Philosophy Basics, 2008).',
+			key: '3'
 		},
 	];
 
@@ -296,7 +311,7 @@ function Glosario(){
 
 	let bibliografia = [
 		{
-			ref: 'Collin, P. (2003). Dictionary of Economics, London: ACBlack',
+			ref: 'Collin, P. (2003). Dictionary of Economics. London: ACBlack',
 			key: 1,
 		},
 		{
