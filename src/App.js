@@ -280,6 +280,11 @@ function Glosario(){
 			concepto: 'Fascismo. ',
 			acepcion: 'Filosofía/teoría politica nacionalista que exalta la nación o la raza sobre los individuos, y que instaura un gobierno autocrático centralizado encabezado por un líder dictatorial, un régimen severo en lo social y lo económico, y la supresión de la oposición a través del uso de la fuerza (Philosophy Basics, 2008).',
 			key: '7'
+		},
+		{
+			concepto: 'Totalitarismo. ',
+			acepcion: 'Sistema político autoritario que establece un control completo político, social y cultural sobre las personas naturales y jurídicas, y usualmente son encabezados por un líder carismático. El totalitarismo no es necesariamente lo mismo que una dictadura o una autocracia. En la práctica, sin embargo, los totalitarismos y las dictaduras van de la mano. El totalitarismo no se alinea necesariamente ni con la derecha ni con la izquierda del espectro político. Como dato agregado, la frase \'gemelos totalitarios\' ha sido usada para vincular al comunismo con el fascismo (Philosophy Basics, 2008).',
+			key: '8'
 		}
 	];
 
