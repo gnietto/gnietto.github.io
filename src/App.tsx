@@ -1,10 +1,11 @@
 import React from 'react';
 import { Box, Container, Text, Image, Stack } from '@chakra-ui/react';
+import ListaPosts from './ListaPosts';
 
 function App() {
   return (
     <Box>
-      <Box color="white" bg="black" p={20} minHeight="80%">
+      <Box color="white" bg="black" p={10} minHeight="80%">
         <h1> Germán Nietto </h1>
         <h2>
           {' '}
@@ -12,7 +13,7 @@ function App() {
           del navegador web.{' '}
         </h2>
       </Box>
-      <Box color="black" bg="white" p={20}>
+      <Box color="black" bg="white" p={10}>
         <h2>
           {' '}
           La presente expresión conceptual -en este caso, un portafolio- está
@@ -28,14 +29,14 @@ function App() {
           repositorio de Github.
         </p>
       </Box>
-      <Box color="black" bg="white" p={20}>
+      <Box color="black" bg="white" p={10}>
         <Stack direction="row">
-          <Container maxWidth="45%" borderWidth="1px" shadow="md" >
+          <Container maxWidth="45%" borderWidth="1px" shadow="md">
             <Image src="static/pexels-natura.jpg" alt="natura" />
             <Text> Static son sitios web estáticos de práctica y tal </Text>
           </Container>
 
-          <Container maxWidth="45%" borderWidth="1px" shadow="md"  >
+          <Container maxWidth="45%" borderWidth="1px" shadow="md">
             <Image src="static/pexels-aurora.jpg" alt="aurora" />
             <Text>
               {' '}
@@ -45,9 +46,12 @@ function App() {
           </Container>
         </Stack>
       </Box>
-      <Box color="white" bg="black" p={20}>
+      <Box color="white" bg="black" p={10}>
         <h1> Blog </h1>
-        <Box>...componente aquí...</Box>
+        <Box>
+          {' '}
+          <ListaPosts />{' '}
+        </Box>
       </Box>
     </Box>
   );

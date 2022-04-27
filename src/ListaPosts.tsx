@@ -1,0 +1,38 @@
+import React from 'react';
+import { Box, Heading, Text } from '@chakra-ui/react';
+import posts from './posts';
+
+function ListaPosts() {
+  return (
+    <article>
+      {posts.length === 0 ? (
+        <b>Sin posts aun</b>
+      ) : (
+        posts.map((item: any) => {
+          return (
+            <Box key={item.key} pb="2rem" mx="10%">
+              <Heading
+                as="h2"
+                bgColor="#222"
+                bgClip="text"
+                fontSize="2xl"
+                fontWeight="bold"
+                _hover={{ color: 'fuchsia' }}
+              >
+                {' '}
+                {item.titulo}{' '}
+              </Heading>
+              <Text fontSize="sm">
+                {' '}
+                {item.autor} | {item.fecha}{' '}
+              </Text>
+              <Text fontSize="lg"> {item.texto[0].substring(0, 300)}... </Text>
+            </Box>
+          );
+        })
+      )}
+    </article>
+  );
+}
+
+export default ListaPosts;
