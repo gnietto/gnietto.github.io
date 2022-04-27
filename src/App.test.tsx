@@ -8,6 +8,6 @@ describe('App renderiza', () => {
   test('Muestra texto de prueba', () => {
     render(<App />);
     screen.debug();
-    expect(screen.queryByText(/portafolio/i)).toBeInTheDocument();
+    expect(screen.queryByText(/Vitest/i)).toBeInTheDocument();
   });
 });
