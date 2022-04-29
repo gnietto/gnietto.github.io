@@ -1,17 +1,21 @@
 import React from 'react';
-import { Box, Container, Text, Image, Stack } from '@chakra-ui/react';
+import {
+  Box,
+  Heading,
+  Text,
+  Image,
+} from '@chakra-ui/react';
 import ListaPosts from './ListaPosts';
 
 function App() {
   return (
     <Box>
-      <Box color="white" bg="black" p={10} minHeight="80%">
-        <h1> Germán Nietto </h1>
-        <h2>
-          {' '}
+      <Box color="white" bg="black" p={10} minHeight="80vh">
+        <Heading> Germán Nietto </Heading>
+        <Heading>
           es un concepto artístico e intelectual que expresa sus ideas a través
-          del navegador web.{' '}
-        </h2>
+          del navegador web.
+        </Heading>
       </Box>
       <Box color="black" bg="white" p={10}>
         <h2>
@@ -29,25 +33,22 @@ function App() {
           repositorio de Github.
         </p>
       </Box>
-      <Box color="black" bg="white" p={10}>
-        <Stack direction="row">
-          <Container maxWidth="45%" borderWidth="1px" shadow="md">
-            <Image src="static/pexels-natura.jpg" alt="natura" />
-            <Text> Static son sitios web estáticos de práctica y tal </Text>
-          </Container>
+      <Box color="black" bg="white">
+        <Image src="static/pexels-natura.jpg" alt="natura" w="90vw"   />
+        <Text textAlign="center" px="20%" >
+          {' '}
+          Static son los sitios web staticos que he realizado originalmente en
+          html/css plano, pero que ahora están unificados como app
+        </Text>
 
-          <Container maxWidth="45%" borderWidth="1px" shadow="md">
-            <Image src="static/pexels-aurora.jpg" alt="aurora" />
-            <Text>
-              {' '}
-              Apps son aplicaciones interactivas que manejan estado en sus
-              componentes{' '}
-            </Text>
-          </Container>
-        </Stack>
+        <Image src="static/pexels-aurora.jpg" alt="aurora" ml="auto" w="90vw"  />
+        <Text textAlign="center" px="20%"  >
+          Apps son aplicaciones interactivas que manejan estado en sus
+          componentes{' '}
+        </Text>
       </Box>
       <Box color="white" bg="black" p={10}>
-        <h1> Blog </h1>
+        <Heading> Blog </Heading>
         <Box>
           {' '}
           <ListaPosts />{' '}
