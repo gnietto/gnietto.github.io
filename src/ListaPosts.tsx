@@ -10,7 +10,7 @@ function ListaPosts() {
       ) : (
         posts.map((item: any) => {
           return (
-            <Box key={item.key} pb="2rem" mx="10%">
+            <Box key={item.key}>
               <Heading
                 as="h2"
                 bgColor="#222"
@@ -22,10 +22,7 @@ function ListaPosts() {
                 {' '}
                 {item.titulo}{' '}
               </Heading>
-              <Text fontSize="sm">
-                {' '}
-                {item.autor} | {item.fecha}{' '}
-              </Text>
+              <Text fontSize="sm">{item.fecha} </Text>
               <Text fontSize="lg"> {item.texto[0].substring(0, 300)}... </Text>
             </Box>
           );
