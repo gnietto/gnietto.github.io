@@ -9,22 +9,22 @@ jobs:
       matrix:
         node-version: [16.x]
     steps:
-      - uses: actions/checkout@v2
-      - uses: pnpm/action-setup@v2.0.1
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.1
         with:
           version: 6.32.4
-      - name: Usa Nodejs ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+      - name: Use Nodejs ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
-      - name: Instala dependencias
+      - name: Install dependencies
         run: |
           pnpm install
           pnpm run build
-      - name: Despliega a gh-pages
+      - name: deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./dist
-          publish_branch: main
+          publish_dir: ./distrib
+          publish_branch: ghpages
