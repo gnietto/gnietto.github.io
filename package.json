@@ -1,6 +1,7 @@
 {
   "name": "portafolio",
   "homepage": "https://gnietto.github.io/",
+  "main": "index.tsx",
   "private": true,
   "version": "0.1.0",
   "scripts": {
