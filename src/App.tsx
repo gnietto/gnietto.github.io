@@ -1,50 +1,48 @@
 import React from 'react';
-import {
-  Box,
-  Heading,
-  Text,
-  Image,
-} from '@chakra-ui/react';
+import { Box, Heading, Text, Image } from '@chakra-ui/react';
 import ListaPosts from './ListaPosts';
 
 function App() {
   return (
     <Box>
       <Box color="white" bg="black" p={10} minHeight="80vh">
-        <Heading> Germán Nietto </Heading>
+        <Heading> Germany Studio </Heading>
         <Heading>
-          es un concepto artístico e intelectual que expresa sus ideas a través
-          del navegador web.
+          es un concepto artístico, intelectual y especializado, derivado del
+          nombre de pila del creador de este sitio, que expresa sus ideas a
+          través del navegador web.
         </Heading>
       </Box>
       <Box color="black" bg="white" p={10}>
-        <h2>
+        <Text pb="2%">
           {' '}
           La presente expresión conceptual -en este caso, un portafolio- está
-          pensada sobre una estrategia de desarrollo 'mobile-first'{' '}
-        </h2>
-        <p>
+          pensada sobre una estrategia de desarrollo mobile-first{' '}
+        </Text>
+        <Text>
           {' '}
-          Está siendo levantado gracias a Vitejs como empaquetador Typescript;
-          Reactjs 18, ChakraUI en el frontend; Nodejs, Postgresql en el backend;
-          Vitest como test runner, y @testing-library como librería
-          especializada de test unitarios y de integración para el ambiente
-          front. El código fuente de este portafolio puede inspeccionarse en mi
-          repositorio de Github.
-        </p>
+          Está siendo levantado gracias a Vite como empaquetador Typescript;
+          Reactjs 17, ChakraUI, Vitest y @testing-library como librerías para el
+          ambiente frontend. El código fuente de este portafolio puede
+          inspeccionarse en mi repositorio de Github.
+        </Text>
+        <Text>
+          Prontamente mostraré aquí apps basadas en Nodejs y PostgreSQL.
+        </Text>
       </Box>
       <Box color="black" bg="white">
-        <Image src="static/pexels-natura.jpg" alt="natura" w="90vw"   />
-        <Text textAlign="center" px="20%" >
+        <Image src="static/pexels-natura.jpg" alt="natura" w="90vw" />
+        <Text textAlign="center" px="20%" py="2%">
           {' '}
-          Static son los sitios web staticos que he realizado originalmente en
-          html/css plano, pero que ahora están unificados como app
+          [En progreso] Sitios web estáticos en HTML5/CSS3, que he recuperado
+          del baúl de los recuerdos, y que ahora están unificados como Single
+          Page Application.
         </Text>
 
-        <Image src="static/pexels-aurora.jpg" alt="aurora" ml="auto" w="90vw"  />
-        <Text textAlign="center" px="20%"  >
-          Apps son aplicaciones interactivas que manejan estado en sus
-          componentes{' '}
+        <Image src="static/pexels-aurora.jpg" alt="aurora" ml="auto" w="90vw" />
+        <Text textAlign="center" px="20%" py="2%">
+          [En progreso] Apps interactivas que manejan estado en sus componentes
+          unificadas como Single Page Application.
         </Text>
       </Box>
       <Box color="white" bg="black" p={10}>
