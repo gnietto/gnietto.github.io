@@ -31,7 +31,7 @@ function App() {
         </Text>
       </Box>
       <Box color="black" bg="white">
-        <Image src="static/pexels-natura.jpg" alt="natura" w="90vw" />
+        <Image src="/imgs/pexelsnatura.jpg" alt="natura" w="90vw" />
         <Text textAlign="center" px="20%" py="2%">
           {' '}
           [En progreso] Sitios web estáticos en HTML5/CSS3, que he recuperado
@@ -39,7 +39,7 @@ function App() {
           Page Application.
         </Text>
 
-        <Image src="static/pexels-aurora.jpg" alt="aurora" ml="auto" w="90vw" />
+        <Image src="/imgs/pexelsaurora.jpg" alt="aurora" ml="auto" w="90vw" />
         <Text textAlign="center" px="20%" py="2%">
           [En progreso] Apps interactivas que manejan estado en sus componentes
           unificadas como Single Page Application.
