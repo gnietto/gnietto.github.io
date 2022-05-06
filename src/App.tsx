@@ -6,47 +6,54 @@ function App() {
   return (
     <Box>
       <Box color="white" bg="black" p={10} minHeight="80vh">
-        <Heading> Germany Studio </Heading>
-        <Heading>
-          es un concepto artístico, intelectual y especializado, derivado del
-          nombre de pila del creador de este sitio, que expresa sus ideas a
-          través del navegador web.
-        </Heading>
-      </Box>
-      <Box color="black" bg="white" p={10}>
-        <Text pb="2%">
-          {' '}
-          La presente expresión conceptual -en este caso, un portafolio- está
-          pensada sobre una estrategia de desarrollo mobile-first{' '}
-        </Text>
-        <Text>
-          {' '}
-          Está siendo levantado gracias a Vite como empaquetador Typescript;
-          Reactjs 17, ChakraUI, Vitest y @testing-library como librerías para el
-          ambiente frontend. El código fuente de este portafolio puede
-          inspeccionarse en mi repositorio de Github.
-        </Text>
-        <Text>
-          Prontamente mostraré aquí apps basadas en Nodejs y PostgreSQL.
+        <Heading textAlign="center"> Germany Studio </Heading>
+        <Text fontSize="4xl" py="1rem" textAlign="center">
+          es un concepto artístico e intelectual que expresa sus ideas a través
+          del navegador web
         </Text>
       </Box>
-      <Box color="black" bg="white">
-        <Image src="/imgs/pexelsnatura.jpg" alt="natura" w="90vw" />
-        <Text textAlign="center" px="20%" py="2%">
+      <Box color="black" bg="white" p={10} fontSize="xl">
+        <Text>
           {' '}
-          [En progreso] Sitios web estáticos en HTML5/CSS3, que he recuperado
-          del baúl de los recuerdos, y que ahora están unificados como Single
-          Page Application.
+          La presente expresión conceptual -en este caso, mi portafolio- está
+          pensada sobre una estrategia de desarrollo incremental y mobile-first.
         </Text>
-
-        <Image src="/imgs/pexelsaurora.jpg" alt="aurora" ml="auto" w="90vw" />
-        <Text textAlign="center" px="20%" py="2%">
-          [En progreso] Apps interactivas que manejan estado en sus componentes
-          unificadas como Single Page Application.
+        <Text py="1rem">
+          {' '}
+          Los proyectos de software de Germany Studio se realizan gracias al
+          gestor de paquetes pnpm, el empaquetador Typescript/Javascript Vitejs;
+          Reactjs, ChakraUI, Vitest y @testing-library como librerías para el
+          desarrollo en el ambiente frontend; y Github Actions que me permite
+          implementar un flujo automatizado básico de CI/CD. Los interesados en
+          conocer más pueden visitar el código fuente de este portafolio y otros
+          proyectos en github.com/gnietto.
         </Text>
+        <Text>
+          Prontamente mostraré apps basadas en Nodejs y PostgreSQL para
+          ambientes de terminal, navegador web y dispositivos móviles.
+        </Text>
+      </Box>
+      <Box color="black" bg="white" fontSize="lg">
+        <Box>
+          <Image src="/imgs/pexelsnatura.jpg" alt="natura" w="90vw" />
+          <Text textAlign="center" px="20%" py="1rem">
+            {' '}
+            [En progreso] Sitios web estáticos en HTML5/CSS3 recuperados desde
+            el baúl de los recuerdos, y que ahora están unificados como Single
+            Page Application.
+          </Text>
+        </Box>
+        <Box py="1.5rem">
+          <Image src="/imgs/pexelsaurora.jpg" alt="aurora" ml="auto" w="90vw" />
+          <Text textAlign="center" px="20%" py="1rem">
+            [En progreso] Apps interactivas que manejan estado en sus
+            componentes y que están ahora unificadas como Single Page
+            Application.
+          </Text>
+        </Box>
       </Box>
       <Box color="white" bg="black" p={10}>
-        <Heading> Blog </Heading>
+        <Heading pb="0.75rem"> Blog </Heading>
         <Box>
           {' '}
           <ListaPosts />{' '}

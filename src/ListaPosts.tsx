@@ -11,17 +11,18 @@ function ListaPosts() {
         posts.map((item: any) => (
           <Box key={item.key}>
             <Heading
-              as="h2"
-              bgColor="#222"
+              bgColor="fuchsia"
               bgClip="text"
-              fontSize="2xl"
+              fontSize="lg"
               fontWeight="bold"
-              _hover={{ color: 'fuchsia' }}
+              _hover={{ color: 'orange' }}
             >
               {' '}
               {item.titulo}{' '}
             </Heading>
-            <Text fontSize="sm">{item.fecha} </Text>
+            <Text fontSize="sm" pb="0.5rem">
+              {item.fecha}{' '}
+            </Text>
             <Text fontSize="lg">
               {' '}
               {item.texto[0].substring(0, 300)}
