@@ -1,17 +1,24 @@
 import React from 'react';
-import { Box, Heading, Text, Image } from '@chakra-ui/react';
+import { Box, Heading, Text, Image, Flex } from '@chakra-ui/react';
 import ListaPosts from './ListaPosts';
 
 function App() {
   return (
     <Box>
-      <Box color="white" bg="black" p={10} minHeight="80vh">
+      <Flex
+        color="white"
+        bg="black"
+        p={10}
+        minHeight="80vh"
+        flexDirection="column"
+        justifyContent="center"
+      >
         <Heading textAlign="center"> Germany Studio </Heading>
         <Text fontSize="4xl" py="1rem" textAlign="center">
           es un concepto artístico e intelectual que expresa sus ideas a través
           del navegador web
         </Text>
-      </Box>
+      </Flex>
       <Box color="black" bg="white" p={10} fontSize="xl">
         <Text>
           {' '}
