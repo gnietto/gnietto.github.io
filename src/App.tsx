@@ -1,5 +1,5 @@
-import React from 'react';
-import { Box, Heading, Text, Image, Flex } from '@chakra-ui/react';
+//import React from 'react';
+import { Box, Heading, Text, Image, Flex, Link } from '@chakra-ui/react';
 import ListaPosts from './ListaPosts';
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
           desarrollo en el ambiente frontend; y Github Actions que me permite
           implementar un flujo automatizado básico de CI/CD. Los interesados en
           conocer más pueden visitar el código fuente de este portafolio y otros
-          proyectos en github.com/gnietto.
+          proyectos en <Link href="https://github.com/gnietto" color="teal.500">github.com/gnietto</Link>.
         </Text>
         <Text>
           Prontamente mostraré apps basadas en Nodejs y PostgreSQL para
@@ -47,7 +47,11 @@ function App() {
             {' '}
             [En progreso] Sitios web estáticos en HTML5/CSS3 recuperados desde
             el baúl de los recuerdos, y que ahora están unificados como Single
-            Page Application.
+            Page Application. Para ver, haz click{' '}
+            <Link color="teal.500" href="https://gnietto.github.io/static/">
+              aquí
+            </Link>
+            .
           </Text>
         </Box>
         <Box py="1.5rem">
@@ -55,7 +59,11 @@ function App() {
           <Text textAlign="center" px="20%" py="1rem">
             [En progreso] Apps interactivas que manejan estado en sus
             componentes y que están ahora unificadas como Single Page
-            Application.
+            Application. Para ver, haz click{' '}
+            <Link color="teal.500" href="https://gnietto.github.io/usestate/">
+              aquí
+            </Link>
+            .
           </Text>
         </Box>
       </Box>
