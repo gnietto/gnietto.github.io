@@ -40,7 +40,7 @@ function App() {
           ambientes de terminal, navegador web y dispositivos móviles.
         </Text>
       </Box>
-      <Box color="black" bg="white" fontSize="lg">
+      <Box color="black" bg="white" fontSize="xl">
         <Box>
           <Image src="/imgs/pexelsnatura.jpg" alt="natura" w="90vw" />
           <Text textAlign="center" px="20%" py="1rem">
@@ -66,6 +66,18 @@ function App() {
             .
           </Text>
         </Box>
+        <Box py="1.5rem">
+          <Image src="/imgs/tiuque.jpg" alt="aurora"  w="90vw" />
+          <Text textAlign="center" px="20%" py="1rem">
+            [Iniciando] App fullstack basada en Nodejs, Reactjs y PostgreSQL que pretende imitar parte de la funcionalidad de Twitter.
+             Para ver, haz click{' '}
+            <Link color="teal.500" href="https://gnietto.github.io/tiuker/">
+              aquí
+            </Link>
+            .
+          </Text>
+        </Box>
+
       </Box>
       <Box color="white" bg="black" p={10}>
         <Heading pb="0.75rem"> Blog </Heading>
