@@ -1,8 +1,9 @@
 import { Global } from '@emotion/react';
 
-const Fonts = () => (
-  <Global
-    styles={`
+function Fonts() {
+  return (
+    <Global
+      styles={`
     @font-face {
       font-family: 'MabryPro-Regular';
       font-style: normal;
@@ -39,7 +40,8 @@ const Fonts = () => (
       src: url('/typos/Cambon-ExtraLight.woff2') format('woff2');
     }
  `}
-  />
-);
+    />
+  );
+}
 
 export default Fonts;
