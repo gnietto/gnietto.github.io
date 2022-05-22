@@ -1,4 +1,3 @@
-//import React from 'react';
 import { Box, Heading, Text, Image, Flex, Link } from '@chakra-ui/react';
 import ListaPosts from './ListaPosts';
 
@@ -15,8 +14,8 @@ function App() {
       >
         <Heading textAlign="center"> Germany Studio </Heading>
         <Text fontSize="4xl" py="1rem" textAlign="center">
-          es un concepto artístico e intelectual que expresa sus ideas a través
-          del navegador web
+          es un concepto artístico, cultural e intelectual que expresa sus ideas
+          principalmente a través del navegador web
         </Text>
       </Flex>
       <Box color="black" bg="white" p={10} fontSize="xl">
@@ -30,10 +29,14 @@ function App() {
           Los proyectos de software de Germany Studio se realizan gracias al
           gestor de paquetes pnpm, el empaquetador Typescript/Javascript Vitejs;
           Reactjs, ChakraUI, Vitest y @testing-library como librerías para el
-          desarrollo en el ambiente frontend; y Github Actions que me permite
-          implementar un flujo automatizado básico de CI/CD. Los interesados en
+          desarrollo en el ambiente frontend; y Github Actions que permite
+          implementar un flujos automatizados de CI/CD. Los interesados en
           conocer más pueden visitar el código fuente de este portafolio y otros
-          proyectos en <Link href="https://github.com/gnietto" color="teal.500">github.com/gnietto</Link>.
+          proyectos en{' '}
+          <Link href="https://github.com/gnietto" color="teal.500">
+            github.com/gnietto
+          </Link>
+          .
         </Text>
         <Text>
           Prontamente mostraré apps basadas en Nodejs y PostgreSQL para
@@ -45,9 +48,10 @@ function App() {
           <Image src="/imgs/pexelsnatura.jpg" alt="natura" w="90vw" />
           <Text textAlign="center" px="20%" py="1rem">
             {' '}
-            [En progreso] Sitios web estáticos en HTML5/CSS3 recuperados desde
-            el baúl de los recuerdos, y que ahora están unificados como Single
-            Page Application. Para ver, haz click{' '}
+            [En progreso] Colección de sitios web estáticos originalmente
+            escritos en HTML5/CSS3 plano que han sido recuperados desde el baúl
+            de los recuerdos, y que ahora están unificados como Single Page
+            Application. Para ver, haz click{' '}
             <Link color="teal.500" href="https://gnietto.github.io/static/">
               aquí
             </Link>
@@ -57,8 +61,8 @@ function App() {
         <Box py="1.5rem">
           <Image src="/imgs/pexelsaurora.jpg" alt="aurora" ml="auto" w="90vw" />
           <Text textAlign="center" px="20%" py="1rem">
-            [En progreso] Apps interactivas que manejan estado en sus
-            componentes y que están ahora unificadas como Single Page
+            [En progreso] Colección dé apps interactivas que manejan estado en
+            sus componentes y que están ahora unificadas como Single Page
             Application. Para ver, haz click{' '}
             <Link color="teal.500" href="https://gnietto.github.io/usestate/">
               aquí
@@ -67,17 +71,18 @@ function App() {
           </Text>
         </Box>
         <Box py="1.5rem">
-          <Image src="/imgs/tiuque.jpg" alt="aurora"  w="90vw" />
+          <Image src="/imgs/tiuque.jpg" alt="aurora" w="90vw" />
           <Text textAlign="center" px="20%" py="1rem">
-            [Iniciando] App fullstack basada en Nodejs, Reactjs y PostgreSQL que pretende imitar parte de la funcionalidad de Twitter.
-             Para ver, haz click{' '}
+            [Iniciando] Tiuker es una aplicación fullstack basada en Nodejs,
+            Reactjs y PostgreSQL que pretende imitar parte de la funcionalidad
+            de Twitter. Cuando Tiuker esté en estado [En progreso], podrás verla
+            haciendo click
             <Link color="teal.500" href="https://gnietto.github.io/tiuker/">
               aquí
             </Link>
             .
           </Text>
         </Box>
-
       </Box>
       <Box color="white" bg="black" p={10}>
         <Heading pb="0.75rem"> Blog </Heading>
