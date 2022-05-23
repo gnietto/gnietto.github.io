@@ -30,8 +30,8 @@ function App() {
           gestor de paquetes pnpm, el empaquetador Typescript/Javascript Vitejs;
           Reactjs, ChakraUI, Vitest y @testing-library como librerías para el
           desarrollo en el ambiente frontend; y Github Actions que permite
-          implementar un flujos automatizados de CI/CD. Los interesados en
-          conocer más pueden visitar el código fuente de este portafolio y otros
+          implementar flujos automatizados de CI/CD. Los interesados en conocer
+          más pueden visitar el código fuente de este portafolio y otros
           proyectos en{' '}
           <Link href="https://github.com/gnietto" color="teal.500">
             github.com/gnietto
@@ -45,7 +45,7 @@ function App() {
       </Box>
       <Box color="black" bg="white" fontSize="xl">
         <Box>
-          <Image src="/imgs/pexelsnatura.jpg" alt="natura" w="90vw" />
+          <Image src="/imgs/statico.jpg" alt="natura" w="90vw" />
           <Text textAlign="center" px="20%" py="1rem">
             {' '}
             [En progreso] Colección de sitios web estáticos originalmente
@@ -59,7 +59,7 @@ function App() {
           </Text>
         </Box>
         <Box py="1.5rem">
-          <Image src="/imgs/pexelsaurora.jpg" alt="aurora" ml="auto" w="90vw" />
+          <Image src="/imgs/dinamico.jpg" alt="aurora" ml="auto" w="90vw" />
           <Text textAlign="center" px="20%" py="1rem">
             [En progreso] Colección dé apps interactivas que manejan estado en
             sus componentes y que están ahora unificadas como Single Page
@@ -75,8 +75,8 @@ function App() {
           <Text textAlign="center" px="20%" py="1rem">
             [Iniciando] Tiuker es una aplicación fullstack basada en Nodejs,
             Reactjs y PostgreSQL que pretende imitar parte de la funcionalidad
-            de Twitter. Cuando Tiuker esté en estado [En progreso], podrás verla
-            haciendo click
+            de Twitter. Cuando Tiuker esté en estado [en progreso], podrás verla
+            haciendo click{' '}
             <Link color="teal.500" href="https://gnietto.github.io/tiuker/">
               aquí
             </Link>
