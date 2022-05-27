@@ -15,6 +15,7 @@ function ListaPosts() {
               bgClip="text"
               fontSize="lg"
               fontWeight="bold"
+              py="0.35vw"
               _hover={{ color: 'orange' }}
             >
               {' '}
@@ -23,7 +24,7 @@ function ListaPosts() {
             <Text fontSize="sm" pb="0.5rem">
               {item.fecha}{' '}
             </Text>
-            <Text fontSize="lg">
+            <Text fontSize="xl">
               {' '}
               {item.texto[0].substring(0, 300)}
               ...{' '}
