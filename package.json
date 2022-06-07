@@ -1,5 +1,5 @@
 {
-  "name": "portafolio",
+  "name": "@gnietto/portafolio",
   "private": true,
   "main": "index.tsx",
   "homepage": "https://gnietto.github.io/",
