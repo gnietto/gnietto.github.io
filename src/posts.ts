@@ -1,5 +1,16 @@
 const posts = [
   {
+    key: 2,
+    titulo: 'De Windows a Linux',
+    texto: [
+      'Durante mucho tiempo he usado Windows 10. Funciona bien, pero ocupa demasiada RAM en asuntos del sistema en vez de asuntos productivos míos. Así que decidí por 3° vez en mi vida cambiar de SO. Esta vez probé OpenBSD y luego Linux. Estoy bastante conforme con ambos, por ahora me decidí por Linux.'
+    ],
+    autor: 'Germán',
+    fecha: 'Junio 16, 2022',
+    link: '/windows-linux',
+    tag: 'Devops'
+  },
+  {
     key: 1,
     titulo: 'Despliegue Contínuo',
     texto: [
@@ -8,17 +19,6 @@ const posts = [
     autor: 'Germán',
     fecha: 'Junio 15, 2022',
     link: '/cd',
-    tag: 'Devops'
-  },
-  {
-    key: 2,
-    titulo: 'De Windows a Linux',
-    texto: [
-      'Durante mucho tiempo he usado Windows 10 para todo asunto digital. Funciona bien, pero ocupa demasiada RAM en asuntos del sistema en vez de asuntos productivos míos. Así que decidí por 3° vez en mi vida cambiar de SO. Esta vez probé OpenBSD y luego Linux. La verdad estoy bastante conforme.'
-    ],
-    autor: 'Germán',
-    fecha: 'Junio 16, 2022',
-    link: '/windows-linux',
     tag: 'Devops'
   }
 ];
