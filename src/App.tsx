@@ -85,7 +85,7 @@ function App() {
         </Box>
       </Box>
       <Box color="white" bg="black" p={10}>
-        <Heading pb="0.75rem"> Blog </Heading>
+        <Heading pb="0.75rem"> Microblogging </Heading>
         <Box>
           {' '}
           <ListaPosts />{' '}
