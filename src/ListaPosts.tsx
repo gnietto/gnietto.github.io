@@ -9,7 +9,7 @@ function ListaPosts() {
         <b>Sin posts aun</b>
       ) : (
         posts.map((item: any) => (
-          <Box key={item.key}>
+          <Box key={item.key} mb="1.5vw">
             <Heading
               bgColor="fuchsia"
               bgClip="text"
@@ -24,11 +24,7 @@ function ListaPosts() {
             <Text fontSize="sm" pb="0.5rem">
               {item.fecha}{' '}
             </Text>
-            <Text fontSize="xl">
-              {' '}
-              {item.texto[0].substring(0, 300)}
-              ...{' '}
-            </Text>
+            <Text fontSize="xl"> {item.texto[0].substring(0, 300)}</Text>
           </Box>
         ))
       )}
