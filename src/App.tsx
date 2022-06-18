@@ -45,7 +45,7 @@ function App() {
       </Box>
       <Box color="black" bg="white" fontSize="xl">
         <Box>
-          <Image src="/imgs/statico.jpg" alt="natura" w="90vw" />
+          <Image src="/imgs/statico.webp" alt="natura" w="90vw" />
           <Text textAlign="center" px="20%" py="1rem">
             {' '}
             [En progreso] Colección de sitios web estáticos originalmente
@@ -59,7 +59,7 @@ function App() {
           </Text>
         </Box>
         <Box py="1.5rem">
-          <Image src="/imgs/dinamico.jpg" alt="aurora" ml="auto" w="90vw" />
+          <Image src="/imgs/dinamico.webp" alt="aurora" ml="auto" w="90vw" />
           <Text textAlign="center" px="20%" py="1rem">
             [En progreso] Colección dé apps interactivas que manejan estado en
             sus componentes y que están ahora unificadas como Single Page
@@ -71,7 +71,7 @@ function App() {
           </Text>
         </Box>
         <Box py="1.5rem">
-          <Image src="/imgs/tiuque.jpg" alt="aurora" w="90vw" />
+          <Image src="/imgs/tiuque.webp" alt="aurora" w="90vw" />
           <Text textAlign="center" px="20%" py="1rem">
             [Iniciando] Tiuker es una aplicación fullstack basada en Nodejs,
             Reactjs y PostgreSQL que pretende imitar parte de la funcionalidad
