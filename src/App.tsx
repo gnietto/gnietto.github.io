@@ -44,25 +44,12 @@ function App() {
         </Text>
       </Box>
       <Box color="black" bg="white" fontSize="xl">
-        <Box>
-          <Image src="/imgs/statico.webp" alt="natura" w="90vw" />
-          <Text textAlign="center" px="20%" py="1rem">
-            {' '}
-            [En progreso] Colección de sitios web estáticos originalmente
-            escritos en HTML5/CSS3 plano que han sido recuperados desde el baúl
-            de los recuerdos, y que ahora están unificados como Single Page
-            Application. Para ver, haz click{' '}
-            <Link color="teal.500" href="https://gnietto.github.io/static/">
-              aquí
-            </Link>
-            .
-          </Text>
-        </Box>
-        <Box py="1.5rem">
+        <Box py=".75rem">
           <Image src="/imgs/dinamico.webp" alt="aurora" ml="auto" w="90vw" />
           <Text textAlign="center" px="20%" py="1rem">
-            [En progreso] Colección dé apps interactivas que manejan estado en
-            sus componentes y que están ahora unificadas como Single Page
+            [En progreso] Colección de apps interactivas (Frases Célebres,
+            Calculadora, Previsualizador Markdown) que manejan estado en sus
+            componentes y que están ahora unificadas como Single Page
             Application. Para ver, haz click{' '}
             <Link color="teal.500" href="https://gnietto.github.io/usestate/">
               aquí
@@ -70,7 +57,38 @@ function App() {
             .
           </Text>
         </Box>
-        <Box py="1.5rem">
+        <Box py=".75rem">
+          <Image
+            src="/imgs/frutakids.webp"
+            alt="frutas tutti frutti"
+            w="90vw"
+          />
+          <Text textAlign="center" px="20%" py="1rem">
+            {' '}
+            [En progreso] Juego didáctico e interactivo para niños cuyo objetivo
+            es clasificar frutas de mayor a menor precio. Para ver, haz click{' '}
+            <Link color="teal.500" href="https://gnietto.github.io/frutakids/">
+              aquí
+            </Link>
+            .
+          </Text>
+        </Box>
+        <Box py=".75rem">
+          <Image src="/imgs/statico.webp" alt="natura" ml="auto" w="90vw" />
+          <Text textAlign="center" px="20%" py="1rem">
+            {' '}
+            [En progreso] Colección de sitios web estáticos (Tributo a Francisco
+            Varela, Documentación Técnica, Encuesta) originalmente escritos en
+            HTML5/CSS3 plano que han sido recuperados desde el baúl de los
+            recuerdos, y que ahora están unificados como Single Page
+            Application. Para ver, haz click{' '}
+            <Link color="teal.500" href="https://gnietto.github.io/static/">
+              aquí
+            </Link>
+            .
+          </Text>
+        </Box>
+        <Box py=".75rem">
           <Image src="/imgs/tiuque.webp" alt="aurora" w="90vw" />
           <Text textAlign="center" px="20%" py="1rem">
             [Iniciando] Tiuker es una aplicación fullstack basada en Nodejs,
