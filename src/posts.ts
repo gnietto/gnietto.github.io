@@ -1,5 +1,16 @@
 const posts = [
   {
+    key: 3,
+    titulo: 'Pausa Constitucional',
+    texto: [
+      'El 20% del esfuerzo bien colocado explica el 80% de los resultados. Ya tenemos más del 80% del esfuerzo hecho en el borrador. Por tanto haré mi pega ciudadana leyendo el borrador de nueva constitución y comparándolo con la constitución vigente. La democracia liberal debe permanecer'
+    ],
+    autor: 'Germán',
+    fecha: 'Junio 23, 2022',
+    link: '/chile-constitucion-1',
+    tag: 'Sociedad'
+  },
+  {
     key: 2,
     titulo: 'De Windows a Linux',
     texto: [
