@@ -1,5 +1,16 @@
 const posts = [
   {
+    key: '0005',
+    titulo: 'Acerca de Ciberseguridad',
+    texto: [
+      'Siempre me han interesado las variantes del campo de la ciberseguridad. Ya he explorado antes superficialmente algunas de estas variantes, y creo que debo ordenar mi tiempo para reiniciar y aumentar mi habilidad en este campo. Diversificar habilidades es una buena idea :)'
+    ],
+    autor: 'Germán',
+    fecha: 'Junio 25, 2022',
+    link: '/acerca-de-ciberseguridad',
+    tag: 'Cybersec'
+  },
+  {
     key: '0004',
     titulo: 'Linux desde Cero',
     texto: [
@@ -10,7 +21,6 @@ const posts = [
     link: '/linux-desde-cero',
     tag: 'Devops'
   },
-
   {
     key: '0003',
     titulo: 'Pausa Constitucional',
