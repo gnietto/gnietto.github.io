@@ -22,7 +22,7 @@ function ListaPosts() {
               {item.titulo}{' '}
             </Heading>
             <Text fontSize="sm" pb="0.5rem">
-              {item.fecha}{' '}
+              {`${item.fecha}   ${item.tag}`}
             </Text>
             <Text fontSize="xl"> {item.texto[0].substring(0, 300)}</Text>
           </Box>
