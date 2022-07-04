@@ -1,5 +1,17 @@
 const posts = [
   {
+    key: '0006',
+    titulo: 'Expressjs, Fastify, Koa o Nestjs?',
+    texto: [
+      'En el rubro del backend con Nodejs, el framework Expressjs ha sido lejos el más usado. Después de 2 años sin mantenimiento, hace poco han retomado el desarrollo. Debido a lo anterior y a mejores funcionalidades, expertos han recomendado cambiar a Fastify o Koa. Me decidí por Fastify. Me gusta :)',
+    ],
+    autor: 'Germán',
+    fecha: 'Julio 04, 2022',
+    link: '/express-fastify-koa-nest',
+    tag: 'Backend'
+  },
+
+  {
     key: '0005',
     titulo: 'Acerca de Ciberseguridad',
     texto: [
