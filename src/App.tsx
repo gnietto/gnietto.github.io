@@ -21,25 +21,14 @@ function App() {
       <Box color="black" bg="white" p={10} fontSize="xl">
         <Text>
           {' '}
-          La presente expresión conceptual -en este caso, mi portafolio- está
-          pensada sobre una estrategia de desarrollo incremental y mobile-first.
-        </Text>
-        <Text py="1rem">
-          {' '}
-          Los proyectos de software de Germany Studio se realizan gracias al
-          gestor de paquetes pnpm, el empaquetador Typescript/Javascript Vitejs;
-          Reactjs, ChakraUI, Vitest y @testing-library como librerías para el
-          desarrollo en el ambiente frontend; y Github Actions que permite
-          implementar flujos automatizados de CI/CD. Los interesados en conocer
-          más pueden visitar el código fuente de este portafolio y otros
-          proyectos en{' '}
+          Las ideas de este portafolio están pensadas sobre una estrategia de
+          desarrollo mobile-first y usan un flujo de CI/CD via Github Actions.
+          El código fuente de este portafolio y otros proyectos pueden
+          visualizarse en {' '}
           <Link href="https://github.com/gnietto" color="teal.500">
             github.com/gnietto
           </Link>
-          .
-        </Text>
-        <Text>
-          Prontamente mostraré apps basadas en Nodejs y PostgreSQL para
+          . Prontamente mostraré apps basadas en Nodejs y PostgreSQL para
           ambientes de terminal, navegador web y dispositivos móviles.
         </Text>
       </Box>
