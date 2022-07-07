@@ -1,16 +1,26 @@
 const posts = [
   {
+    key: '0007',
+    titulo: 'Linux desde Cero II',
+    texto: [
+      'Reconsiderando Linux desde Cero: construir una distro desde 0 es bastante demandante en tiempo y esfuerzo, al mismo tiempo que uno aprende *mucho* acerca de Linux. Dada esta condicionante, una idea alternativa es escoger una distro ultraliviana para entenderla y personalizarla. Ya tengo una en mente.'
+    ],
+    autor: 'Germán',
+    fecha: 'Julio 07, 2022',
+    link: '/linux-desde-cero-2',
+    tag: 'Devops'
+  },
+  {
     key: '0006',
     titulo: 'Expressjs, Fastify, Koa o Nestjs?',
     texto: [
-      'En el rubro del backend con Nodejs, el framework Expressjs ha sido lejos el más usado. Después de 2 años sin mantenimiento, hace poco han retomado el desarrollo. Debido a lo anterior y a mejores funcionalidades, expertos han recomendado cambiar a Fastify o Koa. Me decidí por Fastify. Me gusta :)',
+      'En el rubro del backend con Nodejs, el framework Expressjs ha sido lejos el más usado. Después de 2 años sin mantenimiento, hace poco han retomado el desarrollo. Debido a lo anterior y a mejores funcionalidades, expertos han recomendado cambiar a Fastify o Koa. Me decidí por Fastify. Me gusta :)'
     ],
     autor: 'Germán',
     fecha: 'Julio 04, 2022',
     link: '/express-fastify-koa-nest',
     tag: 'Backend'
   },
-
   {
     key: '0005',
     titulo: 'Acerca de Ciberseguridad',
