@@ -1,5 +1,16 @@
 const posts = [
   {
+    key: '0008',
+    titulo: 'Inicio con los Algoritmos',
+    texto: [
+      'Hace tiempo que tenía pendiente interiorizarme en algoritmos y estructuras de datos, y finalmente empecé a avanzar en esa materia. Me siento entusiasta en que mi habilidad y entendimiento en programación aumentará notoriamente. Hay mucho que estudiar, así que mejor establezco una regla 80/20.',
+    ],
+    autor: 'Germán',
+    fecha: 'Julio 14, 2022',
+    link: '/inicio-algoritmos',
+    tag: 'Programación'
+  },
+  {
     key: '0007',
     titulo: 'Linux desde Cero II',
     texto: [
