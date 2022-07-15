@@ -63,7 +63,20 @@ function App() {
           </Text>
         </Box>
         <Box py=".75rem">
-          <Image src="/imgs/statico.webp" alt="natura" ml="auto" w="90vw" />
+          <Image src="/imgs/tiuque.webp" alt="aurora" w="90vw" ml="auto" />
+          <Text textAlign="center" px="20%" py="1rem">
+            [En progreso] Tiuker es una aplicación fullstack basada en Nodejs,
+            Reactjs y PostgreSQL que pretende imitar parte de la funcionalidad
+            de Twitter. Puedes ver los avances del código en <Link color="teal.500" href="https://github.com/gnietto/tiuker/">Github</Link>. Puedes ver el despliegue
+            haciendo click{' '}
+            <Link color="teal.500" href="https://gnietto.github.io/tiuker/">
+              aquí
+            </Link>
+            .
+          </Text>
+        </Box>
+        <Box py=".75rem">
+          <Image src="/imgs/statico.webp" alt="natura" w="90vw" />
           <Text textAlign="center" px="20%" py="1rem">
             {' '}
             [En progreso] Colección de sitios web estáticos (Tributo a Francisco
@@ -72,19 +85,6 @@ function App() {
             recuerdos, y que ahora están unificados como Single Page
             Application. Para ver, haz click{' '}
             <Link color="teal.500" href="https://gnietto.github.io/static/">
-              aquí
-            </Link>
-            .
-          </Text>
-        </Box>
-        <Box py=".75rem">
-          <Image src="/imgs/tiuque.webp" alt="aurora" w="90vw" />
-          <Text textAlign="center" px="20%" py="1rem">
-            [En progreso] Tiuker es una aplicación fullstack basada en Nodejs,
-            Reactjs y PostgreSQL que pretende imitar parte de la funcionalidad
-            de Twitter. Puedes ver los avances del código en <Link color="teal.500" href="https://github.com/gnietto/tiuker/">Github</Link>. Puedes ver el despliegue
-            haciendo click{' '}
-            <Link color="teal.500" href="https://gnietto.github.io/tiuker/">
               aquí
             </Link>
             .
