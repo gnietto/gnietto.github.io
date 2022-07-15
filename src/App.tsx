@@ -80,9 +80,9 @@ function App() {
         <Box py=".75rem">
           <Image src="/imgs/tiuque.webp" alt="aurora" w="90vw" />
           <Text textAlign="center" px="20%" py="1rem">
-            [Iniciando] Tiuker es una aplicación fullstack basada en Nodejs,
+            [En progreso] Tiuker es una aplicación fullstack basada en Nodejs,
             Reactjs y PostgreSQL que pretende imitar parte de la funcionalidad
-            de Twitter. Cuando Tiuker esté en estado [en progreso], podrás verla
+            de Twitter. Puedes ver los avances del código en <Link color="teal.500" href="https://github.com/gnietto/tiuker/">Github</Link>. Puedes ver el despliegue
             haciendo click{' '}
             <Link color="teal.500" href="https://gnietto.github.io/tiuker/">
               aquí
@@ -91,8 +91,8 @@ function App() {
           </Text>
         </Box>
       </Box>
-      <Box color="white" bg="black" p={10}>
-        <Heading pb="0.75rem"> Microblogging </Heading>
+      <Box color="white" bg="black" p={5}>
+        <Heading pb="0.75rem" fontSize="3xl" > Microblogging </Heading>
         <Box>
           {' '}
           <ListaPosts />{' '}
