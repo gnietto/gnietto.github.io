@@ -1,9 +1,20 @@
 const posts = [
   {
-    key: '0008',
-    titulo: 'Inicio con los Algoritmos',
+    key: '0009',
+    titulo: 'Tiempo para Leer',
     texto: [
-      'Hace tiempo que tenía pendiente interiorizarme en algoritmos y estructuras de datos, y finalmente empecé a avanzar en esa materia. Me siento entusiasta en que mi habilidad y entendimiento en programación aumentará notoriamente. Hay mucho que estudiar, así que mejor establezco una regla 80/20.',
+      'He estado concentrado ordenando el tiempo de lectura, leyendo y tomando notas de varios libros y documentos relativos a la programación e ingeniería de software. No he commiteado en estos últimos días a causa de esto, así que retomaré a la brevedad el ritmo de commiteo.'
+    ],
+    autor: 'Germán',
+    fecha: 'Julio 18, 2022',
+    link: '/tiempo-para-leer',
+    tag: 'Programación'
+  },
+  {
+    key: '0008',
+    titulo: 'Inicio Estudio de Algoritmos',
+    texto: [
+      'Hace tiempo que tenía pendiente interiorizarme en algoritmos y estructuras de datos, y finalmente empecé a avanzar en esa materia. Me siento entusiasta en que mi habilidad y entendimiento en programación aumentará notoriamente. Hay mucho que estudiar, así que mejor establezco una regla 80/20.'
     ],
     autor: 'Germán',
     fecha: 'Julio 14, 2022',
