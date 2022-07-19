@@ -23,13 +23,6 @@ function App() {
           {' '}
           Las ideas de este portafolio están pensadas sobre una estrategia de
           desarrollo mobile-first y usan un flujo de CI/CD via Github Actions.
-          El código fuente de este portafolio y otros proyectos pueden
-          visualizarse en {' '}
-          <Link href="https://github.com/gnietto" color="teal.500">
-            github.com/gnietto
-          </Link>
-          . Prontamente mostraré apps basadas en Nodejs y PostgreSQL para
-          ambientes de terminal, navegador web y dispositivos móviles.
         </Text>
       </Box>
       <Box color="black" bg="white" fontSize="xl">
@@ -54,7 +47,7 @@ function App() {
           />
           <Text textAlign="center" px="20%" py="1rem">
             {' '}
-            [En progreso] Juego didáctico e interactivo para niños cuyo objetivo
+            [En progreso] FrutaKids es un juego didáctico e interactivo para niños cuyo objetivo
             es clasificar frutas de mayor a menor precio. Para ver, haz click{' '}
             <Link color="teal.500" href="https://gnietto.github.io/frutakids/">
               aquí
