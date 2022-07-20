@@ -19,7 +19,7 @@ function App() {
         </Text>
       </Flex>
       <Box color="black" bg="white" p={10} fontSize="xl">
-        <Text>
+        <Text textAlign="center">
           {' '}
           Las ideas de este portafolio están pensadas sobre una estrategia de
           desarrollo mobile-first y usan un flujo de CI/CD via Github Actions.
