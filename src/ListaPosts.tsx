@@ -9,7 +9,7 @@ function ListaPosts() {
         <b>Sin posts aun</b>
       ) : (
         posts.map((item: any) => (
-          <Box key={item.key} mb="1.5vw">
+          <Box key={item.key} mb="1.5rem">
             <Heading
               bgColor="fuchsia"
               bgClip="text"
