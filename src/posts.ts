@@ -25,7 +25,7 @@ const posts = [
     key: '0007',
     titulo: 'Linux desde Cero II',
     texto: [
-      'Reconsiderando Linux desde Cero: construir una distro desde 0 es bastante demandante en tiempo y esfuerzo, al mismo tiempo que uno aprende *mucho* acerca de Linux. Dada esta condicionante, una idea alternativa es escoger una distro ultraliviana para entenderla y personalizarla. Ya tengo una en mente.'
+      'Reconsiderando este tema, construir una distro desde 0 es bastante demandante en tiempo y esfuerzo; al mismo tiempo, uno aprende *mucho* acerca de Linux. Dada esta condicionante, una idea alternativa es escoger una distro ultraliviana para entenderla y personalizarla. Ya tengo una en mente.'
     ],
     autor: 'Germán',
     fecha: 'Julio 07, 2022',
