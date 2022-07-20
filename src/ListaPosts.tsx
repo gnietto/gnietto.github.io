@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Text } from '@chakra-ui/react';
+import { Box, Heading, Text, Tag, TagLabel } from '@chakra-ui/react';
 import posts from './posts';
 
 function ListaPosts() {
@@ -22,7 +22,16 @@ function ListaPosts() {
               {item.titulo}{' '}
             </Heading>
             <Text fontSize="sm" pb="0.5rem">
-              {`${item.fecha}   ${item.tag}`}
+              {item.fecha}{' '}
+              <Tag
+                variant="solid"
+                colorScheme="teal"
+                ml="2rem"
+                w="6rem"
+                justifyContent="center"
+              >
+                {item.tag}
+              </Tag>
             </Text>
             <Text fontSize="xl"> {item.texto[0].substring(0, 300)}</Text>
           </Box>
