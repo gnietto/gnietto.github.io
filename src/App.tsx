@@ -13,7 +13,7 @@ function App() {
         justifyContent="center"
       >
         <Heading textAlign="center"> Germany Studio </Heading>
-        <Text fontSize="4xl" py="1rem" textAlign="center">
+        <Text fontSize="4xl" py="1rem" textAlign="center" lineHeight="2.5rem">
           es un concepto artístico, cultural e intelectual que expresa sus ideas
           principalmente a través del navegador web
         </Text>
@@ -47,8 +47,9 @@ function App() {
           />
           <Text textAlign="center" px="20%" py="1rem">
             {' '}
-            [En progreso] FrutaKids es un juego didáctico e interactivo para niños cuyo objetivo
-            es clasificar frutas de mayor a menor precio. Para ver, haz click{' '}
+            [En progreso] FrutaKids es un juego didáctico e interactivo para
+            niños cuyo objetivo es clasificar frutas de mayor a menor precio.
+            Para ver, haz click{' '}
             <Link color="teal.500" href="https://gnietto.github.io/frutakids/">
               aquí
             </Link>
@@ -60,8 +61,11 @@ function App() {
           <Text textAlign="center" px="20%" py="1rem">
             [En progreso] Tiuker es una aplicación fullstack basada en Nodejs,
             Reactjs y PostgreSQL que pretende imitar parte de la funcionalidad
-            de Twitter. Puedes ver los avances del código en <Link color="teal.500" href="https://github.com/gnietto/tiuker/">Github</Link>. Puedes ver el despliegue
-            haciendo click{' '}
+            de Twitter. Puedes ver los avances del código en{' '}
+            <Link color="teal.500" href="https://github.com/gnietto/tiuker/">
+              Github
+            </Link>
+            . Puedes ver el despliegue haciendo click{' '}
             <Link color="teal.500" href="https://gnietto.github.io/tiuker/">
               aquí
             </Link>
@@ -85,7 +89,10 @@ function App() {
         </Box>
       </Box>
       <Box color="white" bg="black" p={5}>
-        <Heading pb="0.75rem" fontSize="3xl" > Microblogging </Heading>
+        <Heading pb="0.75rem" fontSize="3xl">
+          {' '}
+          Microblogging{' '}
+        </Heading>
         <Box>
           {' '}
           <ListaPosts />{' '}
