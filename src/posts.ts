@@ -1,5 +1,16 @@
 const posts = [
   {
+    key: '0010',
+    titulo: 'Internacionalization API',
+    texto: [
+      'Mucha gente conoce el lenguaje Javascript y algunos de sus entresijos, pero al parecer no mucha gente sabe (al principio) que existe una API de internacionalización que complementa JS. Pues bien, ya que me encuentro ampliando mis herramientas de JS/TS, la intl API está siendo integrada a mi arsenal.'
+    ],
+    autor: 'Germán',
+    fecha: 'Julio 23, 2022',
+    link: '/internacionalization-api',
+    tag: 'Programación'
+  },
+  {
     key: '0009',
     titulo: 'Tiempo para Leer',
     texto: [
@@ -12,7 +23,7 @@ const posts = [
   },
   {
     key: '0008',
-    titulo: 'Inicio Estudio de Algoritmos',
+    titulo: 'Estudio de Algoritmos',
     texto: [
       'Hace tiempo que tenía pendiente interiorizarme en algoritmos y estructuras de datos, y finalmente empecé a avanzar en esa materia. Me siento entusiasta en que mi habilidad y entendimiento en programación aumentará notoriamente. Hay mucho que estudiar, así que mejor establezco una regla 80/20.'
     ],
