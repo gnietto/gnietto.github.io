@@ -1,5 +1,16 @@
 const posts = [
   {
+    key: '0011',
+    titulo: 'The Pragmatic Programmer',
+    texto: [
+      'He notado que el libro The Pragmatic Programmer ha sido ampliamente recomendado para quienes buscan mejorar su desempeño en su rol de programador/desarrollador. Como podrán imaginar, ya lo estoy leyendo y lo que leo me está gustando y me hace mucho sentido.'
+    ],
+    autor: 'Germán',
+    fecha: 'Julio 27, 2022',
+    link: '/pragmatic-programmer',
+    tag: 'Programación'
+  },
+  {
     key: '0010',
     titulo: 'Internacionalization API',
     texto: [
