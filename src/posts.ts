@@ -1,9 +1,20 @@
 const posts = [
   {
+    key: '0012',
+    titulo: 'Domain-Driven Design',
+    texto: [
+      'He llegado al punto de requerir interiorizarme en el ámbito del diseño de software con objeto de construir software ordenadamente escalable si quiero prestar servicios a nivel de gran empresa con códigos fuentes de miles de líneas. A ese tenor, he estado estudiando acerca de Domain-Driven Design.'
+    ],
+    autor: 'Germán',
+    fecha: 'Agosto 13, 2022',
+    link: '/domain-driven-design',
+    tag: 'Programación'
+  },
+  {
     key: '0011',
     titulo: 'The Pragmatic Programmer',
     texto: [
-      'He notado que el libro The Pragmatic Programmer ha sido ampliamente recomendado para quienes buscan mejorar su desempeño en su rol de programador/desarrollador. Como podrán imaginar, ya lo estoy leyendo y lo que leo me está gustando y me hace mucho sentido.'
+      'El libro The Pragmatic Programmer ha sido ampliamente recomendado para quienes buscan mejorar su desempeño en su rol de programador/desarrollador. Como podrán imaginar, ya lo estoy leyendo y lo que leo me está gustando y me hace mucho sentido.'
     ],
     autor: 'Germán',
     fecha: 'Julio 27, 2022',
@@ -63,7 +74,7 @@ const posts = [
     autor: 'Germán',
     fecha: 'Julio 04, 2022',
     link: '/express-fastify-koa-nest',
-    tag: 'Backend'
+    tag: 'Programación'
   },
   {
     key: '0005',
