@@ -2,7 +2,7 @@ const posts = [  {
     key: '0013',
     titulo: 'El Gran Engaño',
     texto: [
-     'Creo que el proceso de Nueva CPR es un gran engaño. ¿Cuánta gente sabe que uno de los objetivos políticos del proceso es consolidar un programa político de integración llamado Patria Grande, y que implica prestar $$ a países sacos rotos con vuestros impuestos? Mucho perjuicio, 0 ganancia.'
+     'Creo que el proceso de Nueva CPR es un gran engaño. ¿Cuánta gente sabe que uno de los objetivos del proceso es consolidar un programa político de integración llamado Patria Grande, y que implica prestar $$ a países sacos rotos con vuestros impuestos? Mucho perjuicio, 0 ganancia.'
     ],
     autor: 'Germán',
     fecha: 'Agosto 14, 2022',
