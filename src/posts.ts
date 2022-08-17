@@ -1,8 +1,9 @@
-const posts = [  {
+const posts = [
+  {
     key: '0013',
     titulo: 'El Gran Engaño',
     texto: [
-     'Creo que el proceso de Nueva CPR es un gran engaño. ¿Cuánta gente sabe que uno de los objetivos del proceso es consolidar un programa político de integración llamado Patria Grande, y que implica prestar $$ a países sacos rotos con vuestros impuestos? Mucho perjuicio, 0 ganancia.'
+      'Creo que el proceso de Nueva CPR es un gran engaño. ¿Cuánta gente sabe que uno de los objetivos del proceso es consolidar un programa político de integración llamado Patria Grande, y que implica prestar $$ a países sacos rotos con vuestros impuestos? Mucho perjuicio, 0 ganancia.'
     ],
     autor: 'Germán',
     fecha: 'Agosto 14, 2022',
@@ -33,7 +34,7 @@ const posts = [  {
   },
   {
     key: '0010',
-    titulo: 'Internacionalization API',
+    titulo: 'Internationalization API',
     texto: [
       'Mucha gente conoce el lenguaje Javascript y algunos de sus entresijos, pero al parecer no mucha gente sabe (al principio) que existe una API de internacionalización que complementa JS. Pues bien, ya que me encuentro ampliando mis herramientas de JS/TS, la intl API está siendo integrada a mi arsenal.'
     ],
