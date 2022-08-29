@@ -1,5 +1,16 @@
 const posts = [
   {
+    key: '0014',
+    titulo: 'Asíncrono vs Síncrono',
+    texto: [
+      'He creado una regla nemotécnica que me parece bastante útil: Si el bloque de código se puede intercambiar con otro sin perder funcionalidad, usa la versión asíncrona (promesas, async/await...). De lo contrario, usa la versión síncrona de toda la vida. Y esto nos lleva nuevamente al ámbito del diseño de software.'
+    ],
+    autor: 'Germán',
+    fecha: 'Agosto 28, 2022',
+    link: '/asincrono-vs-síncrono',
+    tag: 'Programación'
+  },
+  {
     key: '0013',
     titulo: 'El Gran Engaño',
     texto: [
