@@ -1,5 +1,16 @@
 const posts = [
   {
+    key: '0015',
+    titulo: 'Opinionated vs Unopinionated',
+    texto: [
+      'En el debate de los entornos (un)opinionated, creo que las restricciones explícitas son herramientas muy útiles para el proceso de resolución de problemas. Un ejemplo de ésto es Typescript vs Javascript. En consecuencia, pondré más atención a entornos como Angular, Next o Remix.'
+    ],
+    autor: 'Germán',
+    fecha: 'Septiembre 09, 2022',
+    link: '/opinionated-vs-unopinionated',
+    tag: 'Programación'
+  },
+  {
     key: '0014',
     titulo: 'Asíncrono vs Síncrono',
     texto: [
