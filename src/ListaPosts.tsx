@@ -33,7 +33,7 @@ function ListaPosts() {
                 {item.tag}
               </Tag>
             </Text>
-            <Text fontSize="xl"> {item.texto[0].substring(0, 300)}</Text>
+            <Text fontSize="xl"> {item.texto[0].substring(0, 720)}</Text>
           </Box>
         ))
       )}
