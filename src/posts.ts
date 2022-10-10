@@ -1,5 +1,16 @@
 const posts = [
   {
+    key: '0016',
+    titulo: 'Acerca del Blog',
+    texto: [
+      'Hace bastante tiempo que escribí el último post de este microblog. Creo que necesito mejorar algunos aspectos de éste, a saber: 1) Enfocar y mejorar el contenido del blog, por ejemplo, ampliando el detalle de los posts ya escritos  2) Comentar los avances materializados en los proyectos de software web mencionados en este portafolio 3) He subido el límite de mis posts desde 300 caracteres hasta 720 (tomando como referencia los posts de 240 caracteres de Twitter: 240 x 3) para redactar con mayor detalle. Siempre se puede mejorar y eso es lo que estoy haciendo.'
+    ],
+    autor: 'Germán',
+    fecha: 'Octubre 10, 2022',
+    link: '/acerca-del-blog',
+    tag: 'Blog'
+  },
+  {
     key: '0015',
     titulo: 'Opinionated vs Unopinionated',
     texto: [
