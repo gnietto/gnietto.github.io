@@ -118,7 +118,7 @@ const posts = [
     autor: 'Germán',
     fecha: 'Julio 07, 2022',
     link: '/linux-desde-cero-2',
-    tag: 'Devops'
+    tag: 'Linux'
   },
   {
     key: '0006',
@@ -144,14 +144,14 @@ const posts = [
   },
   {
     key: '0004',
-    titulo: 'Linux desde Cero',
+    titulo: 'Linux desde Cero I',
     texto: [
       'Cuando instalé OpenBSD con GUI, noté que ocupaba sólo 50 Mb de RAM. Al instalar Linux con GUI, el consumo mínimo de RAM es de 330 Mb. Me pregunto si puedo bajar el uso de RAM ensamblando una distro de Linux propia desde cero. Iré comentando en este blog a medida que avance en este periplo.'
     ],
     autor: 'Germán',
     fecha: 'Junio 25, 2022',
-    link: '/linux-desde-cero',
-    tag: 'Devops'
+    link: '/linux-desde-cero-1',
+    tag: 'Linux'
   },
   {
     key: '0003',
@@ -173,7 +173,7 @@ const posts = [
     autor: 'Germán',
     fecha: 'Junio 16, 2022',
     link: '/windows-a-linux',
-    tag: 'Devops'
+    tag: 'Linux'
   },
   {
     key: '0001',
