@@ -1,5 +1,16 @@
 const posts = [
   {
+    key: '0017',
+    titulo: 'Linux desde Cero III',
+    texto: [
+      'Revisando mis posts de la serie Linux desde Cero, recordé que uno de los requisitos que yo mismo había declarado para instalar una distribución de Linux o BSD es que el sistema base consuma muy poca memoria RAM. Después de haber configurado, usado y conocido en parte el funcionamiento de la distro actual, me queda claro que es perfectamente posible mejorar la eficiencia del uso de RAM y de disco duro, y a la vez mantener la funcionalidad actual. Así que, apuntando hacia ese objetivo, he decidido darle una oportunidad a Tiny Core Linux. He revisado su documentación lo suficiente, y me parece que puede cumplir con la expectativa aunque su administración sea algo diferente de otras distros. Ampliaremos.'
+    ],
+    autor: 'Germán',
+    fecha: 'Octubre 11, 2022',
+    link: '/linux-desde-cero-3',
+    tag: 'Linux'
+  },
+  {
     key: '0016',
     titulo: 'Acerca del Blog',
     texto: [
