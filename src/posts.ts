@@ -25,7 +25,7 @@ const posts = [
     key: '0015',
     titulo: 'Opinionated vs Unopinionated',
     texto: [
-      'En el debate de los entornos (un)opinionated, creo que las restricciones explícitas son herramientas muy útiles para el proceso de resolución de problemas. Un ejemplo de ésto es Typescript vs Javascript. En consecuencia, pondré más atención a entornos como Angular, Next o Remix.'
+      '[Actualizado el 14/10/2022] Estaba pensando en la diferencia entre los entornos de trabajo (un)opinionated. Hace un tiempo leí un libro de solución de problemas en programación que mencionaba que las restricciones explícitas son herramientas muy útiles para el proceso de resolución de éstos. Un ejemplo de lo expuesto es la ventaja de usar Typescript vs usar Javascript puro, por ejemplo, en el ámbito de lo que se llama análisis estático de código. Esta temática me lleva a considerar con más atención entornos de trabajo más directivos como Angular, Next, Remix o Nestjs. Definitivamente me involucraré mucho más en el buen uso de estos frameworks.'
     ],
     autor: 'Germán',
     fecha: 'Septiembre 12, 2022',
