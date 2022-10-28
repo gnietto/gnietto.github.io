@@ -3,7 +3,7 @@ const posts = [
     key: '0018',
     titulo: 'Linux desde Cero IV',
     texto: [
-      'El resultado parcial de mi experimento con Tiny Core Linux me ha dejado con una bastante buena impresión. Mi paladar minimalista está disfrutando que el consumo de RAM inicial de TCL se encuentre en los 38 Mb para plataformas x86, y en alrededor de 45Mb para x86_64. El sistema de paquetería es diferente a lo visto en otras distro y debo decir que está inteligentemente diseñado. Me gusta que TCL se ejecute preferentemente en RAM, que cargue muy rápido y que se pueda obtener una interfaz gráfica incorporada con una presentación y desempeño bastante decente. Además, me percaté que TCL mantiene un proyecto paralelo llamado dCore, cuya base es TCL, y que obtiene y reconvierte paquetes de los repos de Debian y/o Ubuntu. Super nice!'
+      'El resultado parcial de mi experimento con Tiny Core Linux me ha dejado con una bastante buena impresión. Mi paladar minimalista está disfrutando que el consumo de RAM inicial de TCL se encuentre en los 38 Mb para plataformas x86, y en alrededor de 45Mb para x86_64. El sistema de paquetería es diferente a lo visto en otras distro y debo decir que está inteligentemente diseñado. Me gusta que TCL se ejecute preferentemente en RAM por lo que carga muy rápido. Me gusta que se pueda obtener una interfaz gráfica con una presentación y desempeño bastante decente. Además, me percaté que TCL mantiene un proyecto paralelo basado en TCL llamado dCore, que reconvierte paquetes desde los repos de Debian y/o Ubuntu. Nice!'
     ],
     autor: 'Germán',
     fecha: 'Octubre 27, 2022',
